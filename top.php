@@ -39,12 +39,11 @@
                 </li>
                 <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Serviços</a>
                     <ul class="dropdown-menu">
-                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="odontologia.php">Odontologia</a></li>
-                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="assessoria.php">Assessoria Jurídica Previdenciário</a></li>
-                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="med_forense.php">Medicina Forense</a></li>
-                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="engenharia.php">Engenharia do Trabalho</a></li>
-                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="med_trabalho.php">Medicina do Trabalho</a></li>
-                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="cursos.php">Cursos</a></li>        
+                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="med_trabalho.php">Medicina do Trabalho - PCMSO</a></li>
+                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="engenharia.php">Engenharia de Segurança do Trabalho</a></li>
+                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="med_forense.php">Perícia Trabalhista e Previdenciária</a></li>
+                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="cursos.php">Cursos de Normas Regulamentadoras (NR)</a></li>
+                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="assessoria.php">Assessoria Técnica-Jurídica de Direito Trabalhista e Previdenciário</a></li>       
                     </ul>
                 </li>
                 <li class="dropdown">

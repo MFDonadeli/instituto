@@ -68,44 +68,37 @@
         <div id="ul_div">
             <ul id="ul_info">
                 <li id="item_info">
-                    <a href="odontologia">
-                        <img src="images/odontologia.png" height="100px" width="100px"/>
-                        <h4>Odontologia do Trabalho</h4>
-                        <p>Especialidade que visa previnir e diagnosticar doenças do complexo bucomaxilofacial, provocadas pela atividade laboral.</p>
-                    </a>
-                </li>
-                <li id="item_info">
                     <a href="assessoria">
                         <img src="images/juridico.png" height="100px" width="100px"/>
-                        <h4>Assessoria Jurídica Previdenciário</h4>
+                        <h4>Assessoria Técnica-Jurídica de Direito Trabalhista e Previdenciário</h4>
                         <p>Tem por finalidade atuar sobre as contingências de acidentes de trabalho e doenças profissionais.</p>
                     </a>
                 </li>
                 <li id="item_info">
                     <a href="med_forense">
                         <img src="images/perito.png" height="100px" width="100px"/>
-                        <h4>Medicina Forense</h4>
+                        <h4>Perícia Trabalhista e Previdenciária</h4>
                         <p>O Instituto Paulista possui uma equipe de peritos judiciais que atuam na área jurispericial ha mais de 20 anos.</p>
                     </a>
                 </li>
                 <li id="item_info">
                     <a href="engenharia">
                         <img src="images/engenharia.png" height="100px" width="100px"/>
-                        <h4>Engenharia do Trabalho</h4>
+                        <h4>Engenharia de Segurança do Trabalho</h4>
                         <p>Realizamos trabalhos preventivos com os trabalhadores em seu ambiente de trabalho.</p>
                     </a>
                 </li>
                 <li id="item_info">
                     <a href="med_trabalho">
                         <img src="images/medicina_trabalho.jpg" height="100px" width="100px"/>
-                        <h4>Medicina do Trabalho</h4>
+                        <h4>Medicina do Trabalho - PCMSO</h4>
                         <p>PCMSO - Programa de Controle Médico de Saúde Ocupacional - NR7</p>   
                     </a>
                 </li>
                 <li id="item_info">
                     <a href="cursos">
                         <img src="images/cursos.png" height="100px" width="100px""/>
-                        <h4>Cursos</h4>
+                        <h4>Cursos de Normas Regulamentadoras</h4>
                         <p>Disponibilizamos vários temas de treinamentos aplicados nas empresas em decorrência das necessidades do dia a dia.</p>
                     </a>
                 </li>
