@@ -1,0 +1,35 @@
+.lista_lado
+{
+	padding:0px 40px 0px 0px;
+}
+
+.lista_lado > li {
+	background-color: #0399D4;
+	color: white;
+	text-transform: uppercase;
+	list-style: none;
+	padding: 10px;
+}
+
+.atual {
+	width:20%;
+	float:left;
+	margin: 0 auto;
+}
+
+.conteudo {
+	width:80%;
+	float:left;
+}
+
+@media (max-width: 767px) {
+	.atual {
+		width: 100%;
+	}
+	
+	.conteudo
+	{
+		width: 100%;	
+	}
+	
+}

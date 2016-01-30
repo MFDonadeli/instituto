@@ -1,0 +1,49 @@
+#imagem
+{
+    width:20%;
+    float:left;
+}
+
+#imagem img
+{
+    height:300px;
+    display:block; 
+    margin-left:auto; 
+    margin-right:auto; 
+    transform:translateY(20%);    
+}
+
+#texto
+{
+    width:77%;
+    float:left;
+    margin:10px;    
+}
+
+@media (min-width: 987px) and (max-width: 1181px) {
+    #imagem img {
+        height: 250px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 987px) {
+    #imagem img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    #imagem {
+        width: 0;
+    }
+    
+    #imagem img {
+        display: none;
+    }
+    
+    #texto
+    {
+        width: 100%;
+    }
+}

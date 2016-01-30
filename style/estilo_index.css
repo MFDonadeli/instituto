@@ -1,0 +1,162 @@
+#ul_div {
+  margin-left:auto;
+  margin-right:auto;
+  width:100%;
+}
+
+#ul_div:after
+{
+    content:"";
+    display: table;
+    clear:both;   
+    margin: 10px; 
+}
+
+#ul_info {
+  list-style: none;
+  margin:10px;
+  padding:0;
+}
+
+h4 {
+  font: bold 15px/1.5 Helvetica, Verdana, sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+#item_info img {
+  display: block;
+  float: none;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#item_info p {
+  font: 200 12px/1.5 Georgia, Times New Roman, serif;
+  text-align: center;
+}
+
+#item_info {
+  float: left;
+  width: 320px;
+  height: 200px;
+  margin: 20px; 
+}
+
+#resumo {
+    margin: 5px;
+}
+
+.titulos
+{
+    width:95%;
+    margin: 0 auto;
+}
+
+#texto_instituto
+{
+    width:90%;
+    margin: 0 auto;
+}
+
+#contato
+{
+    width:30%;
+    float:left;
+}
+
+#contato_interno
+{
+    text-align:center;
+    border:1px solid;
+    margin: 20px;
+    height: 80px;
+    width: 210px;
+    float: right;   
+}
+
+#newsletter{
+	background-color: #0399D4;
+	color:white;
+	width:350px;
+    height: 110px;
+	position:relative;
+	top:0px;
+	right:20px;
+	padding:10px;
+	font-size:1.2em;
+	box-shadow: 1px 1px 10px #666666;	
+}
+
+#separador
+{
+    width:100px;
+    float:left;
+    margin: 0 auto;
+}
+
+#noticia
+{
+    width:60%;
+    margin: 0 auto;
+    float:left;
+}
+
+#noticia_interno
+{
+    box-shadow: 1px 1px 10px #666666;
+    margin: 10px;
+    padding: 10px;
+    overflow: scroll;
+}
+
+@media (min-width: 768px) and (max-width: 853px) {
+    #separador{
+        width: 20px;
+    }
+    #noticia {
+        width: 50%;
+    }
+}
+
+@media (min-width: 854px) and (max-width: 1059px) {
+    #separador{
+        width: 50px;
+    }
+    #noticia {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1060px) and (max-width: 1199px) {
+    #separador{
+        width: 50px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    #contato
+    {
+        width:100%;
+        float:none;
+    }
+    
+    #separador
+    {
+        display:none;
+    }
+    
+    #noticia
+    {
+        width:100%;
+        float:none;
+    }
+    
+    #newsletter{
+        float: left;
+        left: 10px;
+        
+    }
+}
