@@ -3,7 +3,7 @@ function checkForm()
 //fetching values from all input fields and storing them in variables
     var nomev = document.getElementById("nome").style.borderBottomColor;
     var sexov = document.getElementById("sexo").style.borderBottomColor;
-	var mailv = document.getElementById("mail").style.borderBottomColor;
+	var mailv = document.getElementById("email").style.borderBottomColor;
 	var telefonev = document.getElementById("telefone").style.borderBottomColor;
 	var enderecov = document.getElementById("endereco").style.borderBottomColor;
     var cepv = document.getElementById("cep").style.borderBottomColor;
@@ -20,7 +20,7 @@ function checkForm()
     
     var nome = document.getElementById("nome").value;
     var sexo = document.getElementById("sexo").value;
-	var mail = document.getElementById("mail").value;
+	var mail = document.getElementById("email").value;
 	var telefone = document.getElementById("telefone").value;
 	var endereco = document.getElementById("endereco").value;
     var cep = document.getElementById("cep").value;

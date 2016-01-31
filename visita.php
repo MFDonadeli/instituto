@@ -33,6 +33,7 @@
   <body>
   
   <div class="wrapper"> 
+      <?php include ('db_visita.php'); ?>
 
       <?php include('top.php'); ?>
       <div class="bottom">
@@ -43,6 +44,7 @@
             <div id="texto">
             <table width="60%" border="0" align="center" cellpadding="0" cellspacing="0" class="tabela1">
                 <form action="#" method="post" id="form_atendimento">
+                    <input name="FORM" type="hidden" value="VISITA">
                     <tr>
                         <td colspan="2"><h1><center>Agende uma visita</center></h1></td>
                     </tr>
@@ -58,8 +60,8 @@
                         <td><input name="nome" type="text" id="nome" size="30" maxlength="100" onblur="validate('nome', this.value)"/></td>
                     </tr>
                     <tr>
-                        <td width="30%" height="30" align="right"><label for="mail">E-mail*:</label></td>
-                        <td><input name="mail" type="text" id="mail" size="30" maxlength="100" onblur="validate('mail', this.value)"/></td>
+                        <td width="30%" height="30" align="right"><label for="email">E-mail*:</label></td>
+                        <td><input name="email" type="text" id="email" size="30" maxlength="100" onblur="validate('email', this.value)"/></td>
                     </tr>
                     <tr>
                         <td width="30%" height="30" align="right"><label for="telefone">Telefone:</label></td>
@@ -70,8 +72,8 @@
                         <td><input name="data" type="text" id="data" size="30" maxlength="100"/></td>
                     </tr>
                     <tr>
-                        <td width="30%" height="30" align="right"><label for="assunto">Horário:</label></td>
-                        <td><input name="assunto" type="text" id="assunto" size="30" maxlength="100"/></td>
+                        <td width="30%" height="30" align="right"><label for="horario">Horário:</label></td>
+                        <td><input name="horario" type="text" id="horario" size="30" maxlength="100"/></td>
                     </tr>
                     <tr>
                         <td width="30%" height="30" align="right"><label for="texto_desc">Mensagem:</label></td>

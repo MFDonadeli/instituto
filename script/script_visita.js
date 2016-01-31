@@ -2,17 +2,17 @@ function checkForm()
 {
 //fetching values from all input fields and storing them in variables
     var nomev = document.getElementById("nome").style.borderBottomColor;
-	var mailv = document.getElementById("mail").style.borderBottomColor;
+	var mailv = document.getElementById("email").style.borderBottomColor;
 	var telefonev = document.getElementById("telefone").style.borderBottomColor;
 	var datav = document.getElementById("data").style.borderBottomColor;
-	var assuntov = document.getElementById("assunto").style.borderBottomColor;
+	var assuntov = document.getElementById("horario").style.borderBottomColor;
 	var textov = document.getElementById("texto_desc").style.borderBottomColor;
 	
     var nome = document.getElementById("nome").value;
-    var mail = document.getElementById("mail").value;
+    var mail = document.getElementById("email").value;
     var telefone = document.getElementById("telefone").value;
     var data = document.getElementById("data").value;
-    var assunto = document.getElementById("assunto").value;
+    var assunto = document.getElementById("horario").value;
     var texto = document.getElementById("texto_desc").value;
 	
 	if (nome == '' || mail == '' || data == '')

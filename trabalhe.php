@@ -18,6 +18,7 @@
   
   <div class="wrapper"> 
 
+      <?php include('db_trabalhe.php'); ?>
       <?php include('top.php'); ?>
       <div class="bottom">
         <div class="conteudo">
@@ -27,6 +28,7 @@
             <div id="texto">
             <table width="60%" border="0" align="center" cellpadding="0" cellspacing="0" class="tabela1">
                 <form action="#" method="post" id="form_trabalhe">
+                    <input name="FORM" type="hidden" value="TRABALHE">
                     <tr>
                         <td colspan="2"><h1><center>Trabalhe conosco</center></h1></td>
                     </tr>
@@ -47,8 +49,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td width="30%" height="30" align="right"><label for="mail">E-mail*:</label></td>
-                        <td><input name="mail" type="text" id="mail" size="30" maxlength="100" onblur="validate('mail', this.value)"/></td>
+                        <td width="30%" height="30" align="right"><label for="email">E-mail*:</label></td>
+                        <td><input name="email" type="text" id="email" size="30" maxlength="100" onblur="validate('email', this.value)"/></td>
                     </tr>
                     <tr>
                         <td width="30%" height="30" align="right"><label for="telefone">Telefone:</label></td>
