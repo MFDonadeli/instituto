@@ -15,8 +15,7 @@
         $insert .= " VALUES ('".implode("', '", $post)."') ";  
         
         mysqli_query($conn, $insert);
-        
-        
+          
     }
        
 ?>
