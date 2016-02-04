@@ -1,0 +1,25 @@
+li a {
+  text-decoration:none;
+}
+
+li {
+    list-style: none;
+}
+
+li ul li{
+    border: none;     
+}
+
+td {
+    border: 1px solid;
+}
+
+input[type=text] {
+    width: 80%;
+    height: 5%;
+}
+
+textarea {
+    width: 80%;
+    height: 40%;
+}

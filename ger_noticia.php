@@ -1,11 +1,19 @@
+<?php
+     require_once 'session.php';
+ ?>
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
         <meta charset="utf-8">
+        <link rel="stylesheet" href="style/estilo_ger_noticia.css" />
         <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
         <script src="script/click_noticias.js"></script>
     </head>
     <body>
+        <?php 
+            if(!isset($_SESSION['user']))
+                die('');    
+        ?>
         <?php
             $data = "";
             $titulo = "";
@@ -36,6 +44,9 @@
             
             if($_POST['post'] == 'true')
             {
+                if(isset($_POST['apagar']))
+                    $delete = true;
+                    
                 include('dbconnect.php');
                 $post = $_POST;
                 
@@ -47,12 +58,20 @@
                     $id = $_POST['id'];
                 }
                 
+                echo $id;
+                
                 unset($post['id']);
                 unset($post['post']);
+                unset($post['apagar']);
+                unset($post['salvar']);
                 
                 $post['conteudo'] = nl2br($post['conteudo']);
                 
-                if($update)
+                if($delete)
+                {
+                    $stmt = "DELETE FROM instituto WHERE id = " . $id;
+                }
+                else if($update)
                 {
                     $stmt = "UPDATE instituto SET ";
                     foreach($post as $key => $values)
@@ -71,40 +90,25 @@
                 }
                
                 mysqli_query($conn, $stmt);  
+                $id = "";
                 
             }  
             
          ?>
         <form action="ger_noticia.php" method="POST" id="form_noticia">
-            <table>
+            
                 <input type="hidden" name="id" value="<?php echo $id ?>"/>
                 <input type="hidden" name="post" value="true" />
-                <tr>
-                    <td><label for="titulo"/>Título</td>
-                </tr>
-                <tr>
-                    <td><input type="text" name="titulo" value="<?php echo $titulo ?>"/></td>
-                </tr>
-                <tr>
-                    <td><label for="data"/>Data</td>
-                </tr>
-                <tr>
-                    <td><input type="text" name="data" value="<?php echo $data ?>"/></td>
-                </tr>
-                <tr>
-                    <td><label for="conteudo"/>Conteudo</td>
-                </tr>
-                <tr>
-                    <td><textarea name="conteudo"><?php echo $conteudo ?></textarea></td>
-                </tr>
-                <tr>
-                    <td><label for="origem"/>Link</td>
-                </tr>
-                <tr>
-                    <td><input type="text" name="origem" value="<?php echo $url ?>"/></td>
-                </tr>
-            </table>
-            <input type="submit" id="salvar" value="Salvar"/>
+                <label for="titulo"/>Título<br>
+                <input type="text" name="titulo" value="<?php echo $titulo ?>"/><br>
+                <label for="data"/>Data<br>
+                <input type="text" name="data" value="<?php echo $data ?>"/><br>
+                <label for="conteudo"/>Conteudo<br>
+                <textarea name="conteudo"><?php echo $conteudo ?></textarea><br>
+                <label for="origem"/>Link<br>
+                <input type="text" name="origem" value="<?php echo $url ?>"/><br>
+            <button type="submit" name="salvar" formaction="ger_noticia.php">Salvar</button>
+            <button type="submit" name="apagar" formaction="ger_noticia.php">Apagar</button>
         </form>
         
         <div>

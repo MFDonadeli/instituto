@@ -1,0 +1,18 @@
+li a {
+  text-decoration:none;
+}
+
+li {
+    list-style: none;
+    border: 1px solid; 
+    padding: 5px;  
+    margin-bottom: 5px;
+}
+
+li ul li{
+    border: none;     
+}
+
+td {
+    border: 1px solid;
+}
