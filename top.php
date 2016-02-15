@@ -37,7 +37,8 @@
                         <li><a data-toggle="collapse" data-target=".navbar-collapse" href="localizacao.php">Localização</a></li>
                     </ul>
                 </li>
-                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Serviços</a>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Serviços</a>
                     <ul class="dropdown-menu">
                         <li><a data-toggle="collapse" data-target=".navbar-collapse" href="med_trabalho.php">Medicina do Trabalho - PCMSO</a></li>
                         <li><a data-toggle="collapse" data-target=".navbar-collapse" href="engenharia.php">Engenharia de Segurança do Trabalho</a></li>

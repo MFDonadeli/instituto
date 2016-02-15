@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
     <meta charset="utf-8">
-    <title>Instituto Paulista</title>
+    <title>Instituto Paulista de Higiene Medicina Forense e do Trabalho</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="" />
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
@@ -110,12 +110,7 @@
                 <h3>Eventos e Ultimas Notícias</h3>
             </div>
             <div id="noticia_interno">
-                <a href="noticias.php"><strong>01.01.2016</strong> - Novo site do Instituto Paulista<br></a>
-                <a href="noticias.php"><strong>01.12.2015</strong> - Instituto Paulista firmou parceria com a APCD – Associação Paulista de Cirurgiões Dentista<br></a>
-                <a href="noticias.php"><strong>01.11.2015</strong> - Resumo da Notícia 2<br></a>
-                <a href="noticias.php"><strong>01.10.2015</strong> - AÇÕES REGRESSIVAS: INSS ajuizou ações no valor de R$ 200 milhões até 2010<br></a>
-                <a href="noticias.php"><strong>01.09.2015</strong> - Resumo da Notícia 4<br></a>
-                <a href="noticias.php"><strong>01.08.2015</strong> - Resumo da Notícia 5<br></a>
+                <?php include('get_noticias.php') ?> 
             </div>
         </div> <!--noticia-->
         
