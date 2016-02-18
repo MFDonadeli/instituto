@@ -1,6 +1,7 @@
 <?php
      require_once 'session.php';
  ?>
+ <!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="style/estilo_admin.css" />  

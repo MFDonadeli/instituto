@@ -24,24 +24,26 @@ h4 {
   text-align: center;
 }
 
-#item_info img {
+.item_info {
+  display: inline-block;
+  width: 320px;
+  height: 200px;
+  margin: 20px; 
+}
+
+.item_info img {
   display: block;
   float: none;
   margin: 0 auto;
   margin-bottom: 20px;
   margin-top: 20px;
+  height: 100px;
+  width: 100px;
 }
 
-#item_info p {
+.item_info p {
   font: 200 12px/1.5 Georgia, Times New Roman, serif;
   text-align: center;
-}
-
-#item_info {
-  display: inline-block;
-  width: 320px;
-  height: 200px;
-  margin: 20px; 
 }
 
 #resumo {
@@ -66,13 +68,19 @@ h4 {
     float:left;
 }
 
+#livros
+{
+    float: left;
+    text-align: center;    
+}
+
 #contato_interno
 {
     text-align:center;
     border:1px solid;
-    margin: 20px;
+    margin: 10px;
     height: 80px;
-    width: 210px;
+    width: 200px;
     float: right;   
 }
 

@@ -1,6 +1,7 @@
 <?php
      require_once 'session.php';
  ?>
+ <!DOCTYPE html>
 <html>
     <head>
         <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
