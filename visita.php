@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
     <meta charset="utf-8">
-    <title>Bootply snippet - Bootply Bootstrap Preview</title>
+    <title>Instituto Paulista - Agende uma visita</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="" />
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
@@ -39,7 +39,7 @@
       <div class="bottom">
         <div class="conteudo">
             <div id="imagem">
-                <img src="images/agenda.jpg"/>
+                <img src="images/agenda.jpg" alt="Agente uma visita"/>
             </div>
             <div id="texto">
             <table width="60%" border="0" align="center" cellpadding="0" cellspacing="0" class="tabela1">

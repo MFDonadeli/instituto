@@ -34,15 +34,15 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="item active">
-                    <img src="images/Instituto1.png" alt="...">
+                    <img src="images/Instituto_MedicinaForense.jpg" alt="Medicina Forense" />
                         <div class="carousel-caption">
-                        <h3>Caption Text</h3>
+                        
                         </div>
                     </div>
                     <div class="item">
-                    <img src="images/Instituto2.png" alt="...">
+                    <img src="images/Instituto_DireitoTrabalhista.jpg" alt="Direito Trabalhista e Previdenciário" />
                     <div class="carousel-caption">
-                        <h3>Caption Text</h3>
+                        
                     </div>
                     </div>
                 </div> <!-- carousel-inner -->
@@ -69,35 +69,35 @@
             <ul id="ul_info">
                 <li class="item_info">
                     <a href="assessoria">
-                        <img src="images/juridico.png"/>
+                        <img src="images/juridico.png" alt="Assessoria Técnica-Jurídica de Direito Trabalhista e Previdenciário"/>
                         <h4>Assessoria Técnica-Jurídica de Direito Trabalhista e Previdenciário</h4>
                         <p>Tem por finalidade atuar sobre as contingências de acidentes de trabalho e doenças profissionais.</p>
                     </a>
                 </li>
                 <li class="item_info">
                     <a href="med_forense">
-                        <img src="images/perito.png"/>
+                        <img src="images/perito.png" alt="Perícia Trabalhista e Previdenciária"/>
                         <h4>Perícia Trabalhista e Previdenciária</h4>
                         <p>O Instituto Paulista possui uma equipe de peritos judiciais que atuam na área jurispericial ha mais de 20 anos.</p>
                     </a>
                 </li>
                 <li class="item_info">
                     <a href="engenharia">
-                        <img src="images/engenharia.png"/>
+                        <img src="images/engenharia.png" alt="Engenharia de Segurança do Trabalho"/>
                         <h4>Engenharia de Segurança do Trabalho</h4>
                         <p>Realizamos trabalhos preventivos com os trabalhadores em seu ambiente de trabalho.</p>
                     </a>
                 </li>
                 <li class="item_info">
                     <a href="med_trabalho">
-                        <img src="images/medicina_trabalho.jpg"/>
+                        <img src="images/medicina_trabalho.jpg" alt="Medicina do Trabalho"/>
                         <h4>Medicina do Trabalho - PCMSO</h4>
                         <p>PCMSO - Programa de Controle Médico de Saúde Ocupacional - NR7</p>   
                     </a>
                 </li>
                 <li class="item_info">
                     <a href="cursos">
-                        <img src="images/cursos.png"/>
+                        <img src="images/cursos.png" alt="Cursos de Normas Regulamentadoras"/>
                         <h4>Cursos de Normas Regulamentadoras</h4>
                         <p>Disponibilizamos vários temas de treinamentos aplicados nas empresas em decorrência das necessidades do dia a dia.</p>
                     </a>
@@ -126,7 +126,7 @@
             </div>
             <div id="autor_container">
             <div id="livros">
-                <img src="images/livro.png" height="80px"/><br>
+                <img src="images/livro.png" alt="livro técnico" height="80px"/><br>
                 Livros técnicos<br> da área
             </div>
             <div id="contato_interno">

@@ -2,7 +2,7 @@
           <div class="top_container">
             <div class="logo_div">
                 <a href="http://localhost/~mfdonadeli/Instituto/">
-                    <img class="logo" src="images/InstitutoPaulista.png"/>
+                    <img class="logo" src="images/InstitutoPaulista.png" alt="Instituto Paulista de Higiene, Medicina Forense e do Trabalho" />
                 </a>
             </div> <!-- logo_div -->
             <div class="contato">
