@@ -26,36 +26,36 @@
                 <img src="images/atendimento_interna.png" alt="Atendimento"/>
             </div>
             <div id="texto">
-            <table width="60%" border="0" align="center" cellpadding="0" cellspacing="0" class="tabela1">
+            <table class="tabela1">
                 <form action="#" method="post" id="form_atendimento">
                     <input name="FORM" type="hidden" value="ATENDIMENTO">
                     <tr>
-                        <td colspan="2"><h1><center>Atendimento</center></h1></td>
+                        <td class="td_center" colspan="2"><h1>Atendimento</h1></td>
                     </tr>
                     <tr>
-                        <td colspan="2">Para entrar em contato com o Instituto Paulista, você pode Ligar para: <strong>(11) 2977-8899</strong>  ou escrever um e-mail para <a href="mailto:comercial@institutopaulista.org?Subject=Atendimento"><strong>comercial@institutopaulista.org</strong></a> ou até preencher o formulário abaixo. Lembre-se de fornecer corretamente os seus dados de contato para que possamos retornar a sua solicitação.</td>
+                        <td  class="td_center" colspan="2">Para entrar em contato com o Instituto Paulista, você pode Ligar para: <strong>(11) 2977-8899</strong>  ou escrever um e-mail para <a href="mailto:comercial@institutopaulista.org?Subject=Atendimento"><strong>comercial@institutopaulista.org</strong></a> ou até preencher o formulário abaixo. Lembre-se de fornecer corretamente os seus dados de contato para que possamos retornar a sua solicitação.</td>
                     <tr>
-                        <td width="30%" height="30" align="right"><label for="nome">Nome*:</label></td>
+                        <td><label for="nome">Nome*:</label></td>
                         <td><input name="nome" type="text" id="nome" size="30" maxlength="100" onblur="validate('nome', this.value)"/></td>
                     </tr>
                     <tr>
-                        <td width="30%" height="30" align="right"><label for="email">E-mail*:</label></td>
+                        <td ><label for="email">E-mail*:</label></td>
                         <td><input name="email" type="text" id="email" size="30" maxlength="100" onblur="validate('email', this.value)"/></td>
                     </tr>
                     <tr>
-                        <td width="30%" height="30" align="right"><label for="telefone">Telefone:</label></td>
+                        <td ><label for="telefone">Telefone:</label></td>
                         <td><input name="telefone" type="text" id="telefone" size="30" maxlength="14" onkeypress="mascara(this, fonemask)" onblur="validate('telefone', this.value)"/></td>
                     </tr>
                     <tr>
-                        <td width="30%" height="30" align="right"><label for="empresa">Empresa:</label></td>
+                        <td ><label for="empresa">Empresa:</label></td>
                         <td><input name="empresa" type="text" id="empresa" size="30" maxlength="100"/></td>
                     </tr>
                     <tr>
-                        <td width="30%" height="30" align="right"><label for="assunto">Assunto:</label></td>
+                        <td ><label for="assunto">Assunto:</label></td>
                         <td><input name="assunto" type="text" id="assunto" size="30" maxlength="100"/></td>
                     </tr>
                     <tr>
-                        <td width="30%" height="30" align="right"><label for="texto_desc">Texto*:</label></td>
+                        <td ><label for="texto_desc">Texto*:</label></td>
                         <td><textarea name="texto_desc" cols="28" rows="5" id="texto_desc" onblur="validate('texto_desc', this.value)"></textarea></td>
                     </tr>
                     <tr>

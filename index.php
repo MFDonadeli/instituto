@@ -126,7 +126,7 @@
             </div>
             <div id="autor_container">
             <div id="livros">
-                <img src="images/livro.png" alt="livro técnico" height="80px"/><br>
+                <img src="images/livro.png" alt="livro técnico" height="60px"/><br>
                 Livros técnicos<br> da área
             </div>
             <div id="contato_interno">
@@ -136,7 +136,7 @@
                 CRM 50.284
             </div>
             </div>
-            <br>    
+               
         </div><!--contato-->
          
           </div> <!-- conteudo -->

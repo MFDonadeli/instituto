@@ -12,3 +12,36 @@ textarea{
 	border-bottom:2px solid #0399D4;
 	border-right:2px solid #0399D4;
 }
+
+table
+{
+    width:60%;
+    border: 0;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+td{
+    padding: 5px;    
+}
+
+td:nth-child(odd)
+{
+    text-align: right;
+    width: 30%;
+}
+
+td:nth-child(even)
+{
+    text-align: left;
+    width: 70%;
+}
+
+.td_center
+{
+    text-align: center !important;  
+}
+
+
+
+

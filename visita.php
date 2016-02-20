@@ -42,45 +42,45 @@
                 <img src="images/agenda.jpg" alt="Agente uma visita"/>
             </div>
             <div id="texto">
-            <table width="60%" border="0" align="center" cellpadding="0" cellspacing="0" class="tabela1">
+            <table class="tabela1">
                 <form action="#" method="post" id="form_atendimento">
                     <input name="FORM" type="hidden" value="VISITA">
                     <tr>
-                        <td colspan="2"><h1><center>Agende uma visita</center></h1></td>
+                        <td class="td_center" colspan="2"><h1><center>Agende uma visita</center></h1></td>
                     </tr>
                     <tr>
-                        <td colspan="2">
+                        <td class="td_center" colspan="2">
                             <?php echo $_POST['nome']; ?>
                             <p>Aqui você pode solicitar um agendamento de uma consulta ou exame.</p>
                             <p>Por favor, preencha com cuidado os campos de telefone e e-mail para que possamos confirmar o agendamento</p>
                         </td>
                     </tr>
                     <tr>
-                        <td width="30%" height="30" align="right"><label for="nome">Nome*:</label></td>
+                        <td><label for="nome">Nome*:</label></td>
                         <td><input name="nome" type="text" id="nome" size="30" maxlength="100" onblur="validate('nome', this.value)"/></td>
                     </tr>
                     <tr>
-                        <td width="30%" height="30" align="right"><label for="email">E-mail*:</label></td>
+                        <td><label for="email">E-mail*:</label></td>
                         <td><input name="email" type="text" id="email" size="30" maxlength="100" onblur="validate('email', this.value)"/></td>
                     </tr>
                     <tr>
-                        <td width="30%" height="30" align="right"><label for="telefone">Telefone:</label></td>
+                        <td><label for="telefone">Telefone:</label></td>
                         <td><input name="telefone" type="text" id="telefone" size="30" maxlength="14" onkeypress="mascara(this, fonemask)" onblur="validate('telefone', this.value)"/></td>
                     </tr>
                     <tr>
-                        <td width="30%" height="30" align="right"><label for="data">Data:</label></td>
+                        <td><label for="data">Data:</label></td>
                         <td><input name="data" type="text" id="data" size="30" maxlength="100"/></td>
                     </tr>
                     <tr>
-                        <td width="30%" height="30" align="right"><label for="horario">Horário:</label></td>
+                        <td><label for="horario">Horário:</label></td>
                         <td><input name="horario" type="text" id="horario" size="30" maxlength="100"/></td>
                     </tr>
                     <tr>
-                        <td width="30%" height="30" align="right"><label for="texto_desc">Mensagem:</label></td>
+                        <td><label for="texto_desc">Mensagem:</label></td>
                         <td><textarea name="texto_desc" cols="28" rows="5" id="texto_desc"></textarea></td>
                     </tr>
                     <tr>
-                        <center><td colspan="2" align="center"><input type="button" name="button2" id="button2" value="Enviar" onclick="checkForm()"/></td></center>
+                        <center><td class="td_center" colspan="2" align="center"><input type="button" name="button2" id="button2" value="Enviar" onclick="checkForm()"/></td></center>
                     </tr>
                 </form>
         </table>
