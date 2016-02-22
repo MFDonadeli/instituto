@@ -1,7 +1,7 @@
 <?php
 include('dbconnect.php');
-$sql = "select id, data, titulo from instituto";
-$sql_full = "select * from instituto where id = " . $_GET['id'];
+$sql = "select id, data, titulo from noticias";
+$sql_full = "select * from noticias where id = " . $_GET['id'];
 
 $result = $conn->query($sql_full);
 if($result->num_rows > 0)

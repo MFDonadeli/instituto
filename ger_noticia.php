@@ -27,7 +27,7 @@
             {
             
                 include('dbconnect.php');
-                $sql = "select * from instituto where id = " . $_GET['id'];
+                $sql = "select * from noticias where id = " . $_GET['id'];
                
                 $result = $conn->query($sql);
                 if($result->num_rows > 0)
@@ -70,11 +70,11 @@
                 
                 if($delete)
                 {
-                    $stmt = "DELETE FROM instituto WHERE id = " . $id;
+                    $stmt = "DELETE FROM noticias WHERE id = " . $id;
                 }
                 else if($update)
                 {
-                    $stmt = "UPDATE instituto SET ";
+                    $stmt = "UPDATE noticias SET ";
                     foreach($post as $key => $values)
                     {
                         $updt .= $key . "='" . $values . "',";
@@ -85,7 +85,7 @@
                 }
                 else
                 {
-                    $stmt = "INSERT INTO instituto ";
+                    $stmt = "INSERT INTO noticias ";
                     $stmt .= " (`".implode("`, `", array_keys($post))."`)";
                     $stmt .= " VALUES ('".implode("', '", $post)."') ";
                 }
@@ -114,7 +114,7 @@
         
         <div>
             <?php include('dbconnect.php');
-            $sql = "select * from instituto";
+            $sql = "select * from noticias";
             
             $result = $conn->query($sql);
             if($result->num_rows > 0)
