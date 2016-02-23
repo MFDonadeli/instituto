@@ -42,11 +42,11 @@
                 <img src="images/agenda.jpg" alt="Agente uma visita"/>
             </div>
             <div id="texto">
-            <table class="tabela1">
                 <form action="#" method="post" id="form_atendimento">
-                    <input name="FORM" type="hidden" value="VISITA">
+                <input name="FORM" type="hidden" value="VISITA">
+            <table class="tabela1">
                     <tr>
-                        <td class="td_center" colspan="2"><h1><center>Agende uma visita</center></h1></td>
+                        <td class="td_center" colspan="2"><h1>Agende uma visita</h1></td>
                     </tr>
                     <tr>
                         <td class="td_center" colspan="2">
@@ -80,10 +80,11 @@
                         <td><textarea name="texto_desc" cols="28" rows="5" id="texto_desc"></textarea></td>
                     </tr>
                     <tr>
-                        <center><td class="td_center" colspan="2" align="center"><input type="button" name="button2" id="button2" value="Enviar" onclick="checkForm()"/></td></center>
+                        <td class="td_center" colspan="2" align="center"><input type="button" name="button2" id="button2" value="Enviar" onclick="checkForm()"/></td>
                     </tr>
-                </form>
-        </table>
+                
+                </table>
+            </form>
         </div> <!-- table -->
             
         </div> <!-- conteudo -->

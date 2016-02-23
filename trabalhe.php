@@ -132,8 +132,8 @@
                     </tr>
                     <tr>
                         <td><label for="obj_prof">Objetivo profissional*:</label></td>
-                        <td><textarea name="obj_prof" cols="28" rows="5" id="obj_prof"></textarea><br>
-                        <span style="font-size: 9px;"><span id="chars">200</span> caracteres restantes</span></td></td>
+                        <td><textarea name="obj_prof" cols="28" rows="5" max_length="200" id="obj_prof"></textarea><br>
+                        <span style="font-size: 9px;"><span id="chars_prof">200</span> caracteres restantes</span></td></td>
                     </tr>
                     <tr>
                         <td><label for="trabalho">Trabalho Desejado*:</label></td>
@@ -154,7 +154,9 @@
                     </tr>
                     <tr>
                         <td><label for="extra">Cursos extras*:</label></td>
-                        <td><textarea name="extra" cols="28" rows="5" id="extra"></textarea></td>
+                        <td><textarea name="extra" cols="28" rows="5" max_length="200" id="extra"></textarea><br>
+                        <span style="font-size: 9px;"><span id="chars_extra">200</span> caracteres restantes</span></td>
+                        
                     </tr>
                     <tr>
                         <td class="td_center" colspan="2"><input type="button" name="button2" id="button2" value="Enviar" onclick="checkForm()"/></td>
@@ -177,10 +179,18 @@
 
 <script>
       var maxLength = 200;
-        $('textarea').keyup(function() {
+        $('#extra').keyup(function() {
         var length = $(this).val().length;
         var length = maxLength-length;
-        $('#chars').text(length);
+        $('#chars_extra').text(length);
+        });
+</script>
+<script>
+        var maxLength1 = 200;
+        $('#obj_prof').keyup(function() {
+        var length1 = $(this).val().length;
+        var length1 = maxLength1-length1;
+        $('#chars_prof').text(length1);
         });
  </script>
 

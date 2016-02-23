@@ -1,9 +1,22 @@
 <?php
 include('dbconnect.php');
 $sql = "select id, data, titulo from noticias";
-$sql_full = "select * from noticias where id = " . $_GET['id'];
 
-$result = $conn->query($sql_full);
+if(!($sql_full = $conn->prepare("SELECT * FROM noticias WHERE id = ?"))){
+    echo "Erro preparando: ( " . $conn->errno . ")" . $conn->error;
+}
+
+$sql_full->bind_param("s", $_GET['id']);
+
+if(!$sql_full->execute())
+{
+    echo "Execute failed: (" . $conn->errno . ") " . $conn->error;
+}
+
+if(!($result = $sql_full->get_result())) {
+    echo "Getting result set failed: (" . $conn->errno . ") " . $conn->error;
+}
+
 if($result->num_rows > 0)
 {
     $row = $result->fetch_assoc();

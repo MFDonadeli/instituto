@@ -27,9 +27,21 @@
             {
             
                 include('dbconnect.php');
-                $sql = "select * from noticias where id = " . $_GET['id'];
-               
-                $result = $conn->query($sql);
+                if(!($sql = $conn->prepare("SELECT * FROM noticias WHERE id = ?"))){
+                    echo "Erro preparando: ( " . $conn->errno . ")" . $conn->error;
+                }
+                
+                $sql->bind_param("s", $_GET['id']);
+                
+                if(!$sql->execute())
+                {
+                    echo "Execute failed: (" . $conn->errno . ") " . $conn->error;
+                }
+                
+                if(!($result = $sql->get_result())) {
+                    echo "Getting result set failed: (" . $conn->errno . ") " . $conn->error;
+                }
+                
                 if($result->num_rows > 0)
                 {
                     while($row = $result->fetch_assoc())
@@ -59,8 +71,6 @@
                     $id = $_POST['id'];
                 }
                 
-                echo $id;
-                
                 unset($post['id']);
                 unset($post['post']);
                 unset($post['apagar']);
@@ -70,27 +80,43 @@
                 
                 if($delete)
                 {
-                    $stmt = "DELETE FROM noticias WHERE id = " . $id;
+                    if(!($stmt = $conn->prepare("DELETE FROM noticias WHERE id = ?"))){
+                        echo "Erro preparando: ( " . $conn->errno . ")" . $conn->error;
+                    }
+                    $stmt->bind_param("s", $id);
+                    
                 }
                 else if($update)
                 {
-                    $stmt = "UPDATE noticias SET ";
+                    $sql = "UPDATE noticias SET ";
                     foreach($post as $key => $values)
                     {
                         $updt .= $key . "='" . $values . "',";
                     }    
                    
                     
-                    $stmt .= rtrim($updt, ",") . " WHERE id = " . $id; 
+                    $sql .= rtrim($updt, ",") . " WHERE id = ?";
+                    
+                    if(!($stmt = $conn->prepare($sql))){
+                        echo "Erro preparando: ( " . $conn->errno . ")" . $conn->error;
+                    } 
+                    $stmt->bind_param("s", $id);
                 }
                 else
                 {
-                    $stmt = "INSERT INTO noticias ";
-                    $stmt .= " (`".implode("`, `", array_keys($post))."`)";
-                    $stmt .= " VALUES ('".implode("', '", $post)."') ";
+                    $sql = "INSERT INTO noticias ";
+                    $sql .= " (`".implode("`, `", array_keys($post))."`)";
+                    $sql .= " VALUES ('".implode("', '", $post)."') ";
+                    
+                    if(!($stmt = $conn->prepare($sql))){
+                        echo "Erro preparando: ( " . $conn->errno . ")" . $conn->error;
+                    } 
                 }
                
-                mysqli_query($conn, $stmt);  
+                if(!$stmt->execute())
+                {
+                    echo "Execute failed: (" . $conn->errno . ") " . $conn->error;
+                } 
                 $id = "";
                 
             }  
