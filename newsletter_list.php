@@ -14,23 +14,26 @@
         ?>
         <?php include('dbconnect.php');
         
-        $sql = "select email from email";
+        $sql = "select email, origem from email";
         
         $result = $conn->query($sql);
         
         if($result->num_rows > 0)
         {
+            echo "<table>";
+            echo "<tr>";
+            echo "<th>E-mail</th><th>Origem</th>";
+            echo "</tr>";
             while($row = $result->fetch_assoc())
             {
-                echo "<table>";
+                echo "<tr>";
                 foreach($row as $key => $value)
                 {
-                    echo "<tr>";
-                    echo "<td>" . $value . "</td>";
-                    echo "</tr>";  
+                    echo "<td>" . $value . "</td>";    
                 }   
-                echo "</table>";
+                echo "</tr>";
             }
+            echo "</table>";
         }
         
         ?>

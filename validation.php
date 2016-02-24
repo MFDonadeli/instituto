@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		}
 	}
 	
-	if($field == 'data_nascimento')
+	if($field == 'data_nascimento' || $field == 'data')
 	{
 		if(empty(test_input($value)))
 		{

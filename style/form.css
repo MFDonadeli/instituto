@@ -13,6 +13,12 @@ textarea{
 	border-right:2px solid #0399D4;
 }
 
+
+#msg_preenchimento{
+    color: red;
+    font-weight: bold;
+}
+
 table
 {
     width:60%;
@@ -41,6 +47,7 @@ td:nth-child(even)
 {
     text-align: center !important;  
 }
+
 
 
 

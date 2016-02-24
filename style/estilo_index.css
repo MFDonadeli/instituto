@@ -28,7 +28,7 @@ h4 {
   display: inline-block;
   width: 320px;
   height: 200px;
-  margin: 20px; 
+  margin: 0px; 
 }
 
 .item_info img {
@@ -102,6 +102,18 @@ h4 {
 	box-shadow: 1px 1px 10px #666666;	
 }
 
+#btnemail
+{
+    border:none;
+    background-color:white;
+    color: #0399D4  
+}
+
+#mail
+{
+    border:none;    
+}
+
 #separador
 {
     width:100px;
@@ -171,6 +183,12 @@ h4 {
         float: left;
         left: 10px;
     }
+    
+    #mail
+    {
+        width: 200px;
+    }
+   
     
     #autor_container
     {

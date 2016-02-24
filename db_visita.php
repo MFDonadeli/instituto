@@ -4,7 +4,7 @@
     
     if($_POST['FORM'] == 'VISITA')
     {
-        $sql_values = "INSERT INTO email (email, origem) values ('" . $_POST['email'] . "', 'visita') ";
+        $sql_values = "INSERT INTO email (email, origem) values ('" . $_POST['email'] . "', 'Visita') ";
         mysqli_query($conn, $sql_values);  
         
         $post = $_POST;   

@@ -30,31 +30,31 @@
                 <form action="#" method="post" id="form_trabalhe">
                     <input name="FORM" type="hidden" value="TRABALHE">
                     <tr>
-                        <td class="td_center" colspan="2"><h1><center>Trabalhe conosco</center></h1></td>
+                        <td class="td_center" colspan="2"><h1><center>Trabalhe conosco</center></h1><br>
+                        <span id="msg_preenchimento"></span></td>
                     </tr>
                     <tr>
                         <td class="td_center" colspan="2">
                             <h3>Informações Pessoais</h3>
                         </td>
                     </tr>
-                    <tr>
                         <td><label for="nome">Nome Completo*:</label></td>
                         <td><input name="nome" type="text" id="nome" size="30" maxlength="100" onblur="validate('nome', this.value)"/></td>
                     </tr>
                     <tr>
                         <td><label for="sexo">Sexo*:</label></td>
                         <td>
-                            <input type="radio" name="sexo" id="sexo" value="masculino">Masculino<br>
-                            <input type="radio" name="sexo" id="sexo" value="feminino">Feminino<br>
+                            <input type="radio" name="sexo" id="sexo" value="Masculino">Masculino<br>
+                            <input type="radio" name="sexo" id="sexo" value="Feminino">Feminino<br>
                         </td>
                     </tr>
                     <tr>
                         <td><label for="email">E-mail*:</label></td>
-                        <td><input name="email" type="text" id="email" size="30" maxlength="100" onblur="validate('email', this.value)"/></td>
+                        <td><input name="email" type="text" id="email" size="30" maxlength="50" onblur="validate('email', this.value)"/></td>
                     </tr>
                     <tr>
-                        <td><label for="telefone">Telefone:</label></td>
-                        <td><input name="telefone" type="text" id="telefone" size="30" maxlength="14" onkeypress="mascara(this, fonemask)" onblur="validate('telefone', this.value)"/></td>
+                        <td><label for="telefone">Telefone*:</label></td>
+                        <td><input name="telefone" type="text" id="telefone" size="30" maxlength="15" onkeypress="mascara(this, fonemask)" onblur="validate('telefone', this.value)"/></td>
                     </tr>
                     <tr>
                         <td><label for="endereco">Endereço*:</label></td>
@@ -62,15 +62,15 @@
                     </tr>
                     <tr>
                         <td><label for="cep">CEP*:</label></td>
-                        <td><input name="cep" type="text" id="cep" size="30" maxlength="100" onkeypress="mascara(this, cepmask)" onblur="validate('cep', this.value)"/></td>
+                        <td><input name="cep" type="text" id="cep" size="30" maxlength="9" onkeypress="mascara(this, cepmask)" onblur="validate('cep', this.value)"/></td>
                     </tr>
                     <tr>
                         <td><label for="bairro">Bairro*:</label></td>
-                        <td><input name="bairro" type="text" id="bairro" size="30" maxlength="100" onblur="validate('bairro', this.value)"/></td>
+                        <td><input name="bairro" type="text" id="bairro" size="30" maxlength="50" onblur="validate('bairro', this.value)"/></td>
                     </tr>
                     <tr>
                         <td><label for="cidade">Cidade*:</label></td>
-                        <td><input name="cidade" type="text" id="cidade" size="30" maxlength="100" onblur="validate('cidade', this.value)"/></td>
+                        <td><input name="cidade" type="text" id="cidade" size="30" maxlength="75" onblur="validate('cidade', this.value)"/></td>
                     </tr>
                     <tr>
                         <td height="30" align="right"><label for="estado">Estado*:</label></td>
@@ -121,8 +121,8 @@
                     </tr>
                     <tr>
                         <td><label for="deficiencia">Portador Deficiência*:</label></td>
-                        <td><input type="radio" id="deficiencia" name="deficiencia" value="sim">Sim<br>
-                         <input type="radio" id="deficiencia" name="deficiencia"  value="nao">Não<br>
+                        <td><input type="radio" id="deficiencia" name="deficiencia" value="Sim">Sim<br>
+                         <input type="radio" id="deficiencia" name="deficiencia"  value="Nao">Não<br>
                         </td>
                     </tr>
                     <tr>
@@ -137,15 +137,15 @@
                     </tr>
                     <tr>
                         <td><label for="trabalho">Trabalho Desejado*:</label></td>
-                        <td><input type="checkbox" name="trabalho" id="trabalho" value="1">Autônomo<br>
-                         <input type="checkbox" name="trabalho"  id="trabalho" value="2">Estágio<br>
-                         <input type="checkbox" name="trabalho"  id="trabalho" value="3">Meio Período<br>
-                         <input type="checkbox" name="trabalho"  id="trabalho" value="4">Período Integral<br>
+                        <td><input type="checkbox" name="trabalho[]" id="trabalho" value="Autônomo">Autônomo<br>
+                         <input type="checkbox" name="trabalho[]"  id="trabalho" value="Estágio">Estágio<br>
+                         <input type="checkbox" name="trabalho[]"  id="trabalho" value="Meio Período">Meio Período<br>
+                         <input type="checkbox" name="trabalho[]"  id="trabalho" value="Período Integral">Período Integral<br>
                         </td>
                     </tr>
                     <tr>
                         <td><label for="salario">Último Salário:</label></td>
-                        <td><input name="salario" type="text" id="salario" size="30" maxlength="100" onblur="validate('nome', this.value)"/></td>
+                        <td><input name="salario" type="text" id="salario" size="30" maxlength="10" onblur="validate('nome', this.value)"/></td>
                     </tr>
                     <tr>
                         <td class="td_center" colspan="2">

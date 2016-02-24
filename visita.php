@@ -50,7 +50,6 @@
                     </tr>
                     <tr>
                         <td class="td_center" colspan="2">
-                            <?php echo $_POST['nome']; ?>
                             <p>Aqui você pode solicitar um agendamento de uma consulta ou exame.</p>
                             <p>Por favor, preencha com cuidado os campos de telefone e e-mail para que possamos confirmar o agendamento</p>
                         </td>
@@ -61,23 +60,23 @@
                     </tr>
                     <tr>
                         <td><label for="email">E-mail*:</label></td>
-                        <td><input name="email" type="text" id="email" size="30" maxlength="100" onblur="validate('email', this.value)"/></td>
+                        <td><input name="email" type="text" id="email" size="30" maxlength="50" onblur="validate('email', this.value)"/></td>
                     </tr>
                     <tr>
                         <td><label for="telefone">Telefone:</label></td>
-                        <td><input name="telefone" type="text" id="telefone" size="30" maxlength="14" onkeypress="mascara(this, fonemask)" onblur="validate('telefone', this.value)"/></td>
+                        <td><input name="telefone" type="text" id="telefone" size="30" maxlength="15" onkeypress="mascara(this, fonemask)" onblur="validate('telefone', this.value)"/></td>
                     </tr>
                     <tr>
-                        <td><label for="data">Data:</label></td>
-                        <td><input name="data" type="text" id="data" size="30" maxlength="100"/></td>
+                        <td><label for="data">Data*:</label></td>
+                        <td><input name="data" type="text" id="data" size="30" maxlength="10" onblur="validate('data', this.value)"/></td>
                     </tr>
                     <tr>
                         <td><label for="horario">Horário:</label></td>
-                        <td><input name="horario" type="text" id="horario" size="30" maxlength="100"/></td>
+                        <td><input name="horario" type="text" id="horario" size="30" maxlength="5"/></td>
                     </tr>
                     <tr>
                         <td><label for="texto_desc">Mensagem:</label></td>
-                        <td><textarea name="texto_desc" cols="28" rows="5" id="texto_desc"></textarea></td>
+                        <td><textarea name="texto_desc" cols="28" rows="5" id="texto_desc" maxlength="200"></textarea></td>
                     </tr>
                     <tr>
                         <td class="td_center" colspan="2" align="center"><input type="button" name="button2" id="button2" value="Enviar" onclick="checkForm()"/></td>

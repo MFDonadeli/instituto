@@ -8,16 +8,17 @@
         <meta name="description" content="" />
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="style/estilo_geral.css" />
+        <link rel="stylesheet" href="style/localizacao.css" />
     </header>
     <body>
         <div class="wrapper">
              <?php include('top.php'); ?>
             <div class="bottom">
                 <div class="conteudo">
-                    <div style="float:left;padding:50px;">
-                        <iframe width="598" height="280" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.br/maps?f=q&amp;source=s_q&amp;hl=pt-BR&amp;geocode=&amp;q=rua+dr+cesar,+530+-+s%C3%A3o+paulo+-+SP&amp;sll=-23.50274,-46.626601&amp;sspn=0.010882,0.026157&amp;gl=br&amp;ie=UTF8&amp;hq=&amp;hnear=R.+Dr.+C%C3%A9sar,+530+-+Santana,+S%C3%A3o+Paulo,+02013-001&amp;ll=-23.502745,-46.626706&amp;spn=0.010882,0.026157&amp;z=16&amp;output=embed"></iframe>
+                    <div id="map">
+                        <iframe id="frame_map" scrolling="no" src="http://maps.google.com.br/maps?f=q&amp;source=s_q&amp;hl=pt-BR&amp;geocode=&amp;q=rua+dr+cesar,+530+-+s%C3%A3o+paulo+-+SP&amp;sll=-23.50274,-46.626601&amp;sspn=0.010882,0.026157&amp;gl=br&amp;ie=UTF8&amp;hq=&amp;hnear=R.+Dr.+C%C3%A9sar,+530+-+Santana,+S%C3%A3o+Paulo,+02013-001&amp;ll=-23.502745,-46.626706&amp;spn=0.010882,0.026157&amp;z=16&amp;output=embed"></iframe>
 			        </div>
-                    <div style="float:left;padding:10px;transform:translateY(50%);">
+                    <div id="endereco">
                         <strong>Instituto Paulista de Higiene Medicina Forense e do Trabalho</strong><p>
                         Rua Dr. César, 530 - 9º andar<br>
                         CEP 02013-002<br>

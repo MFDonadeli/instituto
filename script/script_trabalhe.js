@@ -40,7 +40,8 @@ function checkForm()
      || estado == '' || data_nascimento == '' || estado_civil == '' || deficiencia == '' || obj_prof == '' || trabalho == ''
        || extra == '')
     {
-            
+        var msg = document.getElementById("msg_preenchimento");
+        msg.innerHTML = "Preencha todos os campos obrigatórios, marcados com *"        
     }
     else
     {

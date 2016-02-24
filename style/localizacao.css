@@ -1,0 +1,41 @@
+#map
+{
+    float:left;
+    padding:50px;
+}
+
+#frame_map
+{
+    width: 598px;
+    height: 280px;
+    border: 0;
+}
+
+#endereco
+{
+    float:left;
+    padding:10px;
+    transform:translateY(50%);
+}
+
+
+
+@media (min-width: 1160px) and (max-width: 1250px) {
+    #map
+    {
+        padding: 10px;    
+    }
+}
+
+@media (max-width: 1159px)
+{
+    #map {
+        padding: 0px;
+    }
+    
+    #endereco
+    {
+        padding-left: 5px;
+        transform:translateY(0);
+    }
+}

@@ -4,6 +4,12 @@ $username = "root";
 $password = "";
 $database = "instituto";
 
+/*$servername = "mysql02.institutopaulista.org";
+$username = "institutopauli2";
+$password = "Instituto0901";
+$database = "institutopauli2";*/
+
+
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);
 

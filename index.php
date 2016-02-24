@@ -121,8 +121,9 @@
             <div id="newsletter">
               Quer receber nossas informações?<br>
               Assine nossa Newsletter<p>
-              <form id="form_newsletter"><input type="text" name="mail" id="mail" placeholder="Digite seu email" style="border:none;">&nbsp;&nbsp;
-              <input type="button" value="Assine Agora!" onclick="newsletter(mail.value)" style="border:none;background-color:white;color:blue"></form>
+              <form id="form_newsletter">
+              <input type="text" name="mail" id="mail" placeholder="Digite seu email">&nbsp;&nbsp;
+              <input type="button" value="Assine Agora!" id="btnemail" onclick="newsletter(mail.value)"></form>
             </div>
             <div id="autor_container">
             <div id="livros">

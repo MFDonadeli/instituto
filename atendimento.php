@@ -40,26 +40,26 @@
                     </tr>
                     <tr>
                         <td ><label for="email">E-mail*:</label></td>
-                        <td><input name="email" type="text" id="email" size="30" maxlength="100" onblur="validate('email', this.value)"/></td>
+                        <td><input name="email" type="text" id="email" size="30" maxlength="50" onblur="validate('email', this.value)"/></td>
                     </tr>
                     <tr>
                         <td ><label for="telefone">Telefone:</label></td>
-                        <td><input name="telefone" type="text" id="telefone" size="30" maxlength="14" onkeypress="mascara(this, fonemask)" onblur="validate('telefone', this.value)"/></td>
+                        <td><input name="telefone" type="text" id="telefone" size="30" maxlength="15" onkeypress="mascara(this, fonemask)" onblur="validate('telefone', this.value)"/></td>
                     </tr>
                     <tr>
                         <td ><label for="empresa">Empresa:</label></td>
-                        <td><input name="empresa" type="text" id="empresa" size="30" maxlength="100"/></td>
+                        <td><input name="empresa" type="text" id="empresa" size="30" maxlength="50"/></td>
                     </tr>
                     <tr>
                         <td ><label for="assunto">Assunto:</label></td>
-                        <td><input name="assunto" type="text" id="assunto" size="30" maxlength="100"/></td>
+                        <td><input name="assunto" type="text" id="assunto" size="30" maxlength="50"/></td>
                     </tr>
                     <tr>
                         <td ><label for="texto_desc">Texto*:</label></td>
-                        <td><textarea name="texto_desc" cols="28" rows="5" id="texto_desc" onblur="validate('texto_desc', this.value)"></textarea></td>
+                        <td><textarea name="texto_desc" cols="28" rows="5" id="texto_desc" onblur="validate('texto_desc', this.value)" maxlength="200"></textarea></td>
                     </tr>
                     <tr>
-                        <center><td colspan="2" align="center"><input type="button" name="button2" id="button2" value="Enviar" onclick="checkForm()"/></td></center>
+                        <td class="td_center" colspan="2" align="center"><input type="button" name="button2" id="button2" value="Enviar" onclick="checkForm()"/></td>
                     </tr>
                 </form>
         </table>
