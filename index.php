@@ -122,7 +122,8 @@
               Quer receber nossas informações?<br>
               Assine nossa Newsletter<p>
               <form id="form_newsletter">
-              <input type="text" name="mail" id="mail" placeholder="Digite seu email">&nbsp;&nbsp;
+              <input type="text" name="mail" id="mail" placeholder="Digite seu email" onblur="validate(mail.value)">&nbsp;&nbsp;
+              <input type="hidden" name="valid_mail" id="valid_mail">
               <input type="button" value="Assine Agora!" id="btnemail" onclick="newsletter(mail.value)"></form>
             </div>
             <div id="autor_container">

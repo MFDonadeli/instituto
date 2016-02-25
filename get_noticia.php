@@ -22,6 +22,11 @@ if($result->num_rows > 0)
     $row = $result->fetch_assoc();
     echo "<h4>" . $row['titulo'] . "</h4>";
     echo $row['conteudo'];
+    if(strlen($row['origem'])>0)
+    {
+        echo "<br><br>";
+        echo "<strong>Fonte: </strong>" . $row['origem'];
+    }
 }
 echo "<hr>";
 echo "<strong>Outras notícias</strong><br>";

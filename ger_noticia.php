@@ -49,8 +49,8 @@
                         $id = $row['id'];
                         $data = $row['data'];
                         $titulo = $row['titulo'];
-                        $conteudo = $row['conteudo'];
-                        $url = $row['url'];
+                        $conteudo = str_replace('<br />', "\n",$row['conteudo']);
+                        $url = $row['origem'];
                     }
                 } 
             } 
@@ -76,7 +76,7 @@
                 unset($post['apagar']);
                 unset($post['salvar']);
                 
-                $post['conteudo'] = nl2br($post['conteudo']);
+                $post['conteudo'] = $post_content = str_replace("\r\n","<br />",$post['conteudo']);
                 
                 if($delete)
                 {

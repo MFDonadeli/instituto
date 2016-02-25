@@ -195,7 +195,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	
 function insertdb(){
 	$error="OK";
-
 }
 
 function test_input($data) {
