@@ -2,16 +2,9 @@
           <div class="top_container">
             <div class="logo_div">
                 <a href="http://www.institutopaulista.org/InstitutoNovo">
-                    <img class="logo" src="images/InstitutoPaulista.png" alt="Instituto Paulista de Higiene, Medicina Forense e do Trabalho" />
+                    <img class="logo" src="images/institutopaulista_largo.png" alt="Instituto Paulista de Higiene, Medicina Forense e do Trabalho" />
                 </a>
             </div> <!-- logo_div -->
-            <div class="contato">
-                <p style="text-align:right;font-weight:bold;color:white;">
-                <span style="font-size:26px;">(11) 2977-8899</span>
-                <br>
-                <span style="font-size:22px;">comercial@institutopaulista.org</span>
-                </p>
-            </div>
           </div>
           
              

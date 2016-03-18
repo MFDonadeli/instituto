@@ -1,16 +1,13 @@
-#ul_div {
+#servicos {
   margin: 0 auto;
-  width:100%;
-  text-align:center;
+  width:60%;
+  float:left;
 }
 
-#ul_div:after
-{
-    content:"";
-    display: table;
-    clear:both;   
-    margin: 10px; 
+#ul_div{
+    text-align:center;
 }
+
 
 #ul_info {
   list-style: none;
@@ -71,7 +68,7 @@ h4 {
 
 #ul_noticia_div {
   margin: 0 auto;
-  width:60%;
+  width:75%;
   text-align:left;
   float: left;
 }
@@ -115,8 +112,8 @@ h4 {
 #newsletter{
 	background-color: #0399D4;
 	color:white;
-	width:475px;
-    height: 80px;
+	width:350px;
+    height: 100px;
 	padding:10px;
 	font-size:1.2em;
 	box-shadow: 1px 1px 10px #666666;	
@@ -144,7 +141,7 @@ h4 {
 
 #noticia
 {
-    width:100%;
+    width:40%;
     margin: 0 auto;
     float:left;
 }
@@ -154,7 +151,6 @@ h4 {
     box-shadow: 1px 1px 10px #666666;
     margin: 10px;
     padding: 10px;
-    width: 35%;
     overflow: scroll;
 }
 

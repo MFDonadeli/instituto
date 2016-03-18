@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="" />
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style/estilo_geral.css" />
-    <link rel="stylesheet" href="style/estilo_index.css" />
-    <link rel="stylesheet" href="style/estilo_navbar.css" />
+    <link rel="stylesheet" href="style/estilo_geral.2.css" />
+    <link rel="stylesheet" href="style/estilo_index.1.css" />
     
         
   </head>
@@ -56,12 +55,11 @@
                     <span class="glyphicon glyphicon-chevron-right"></span>
                 </a>
                </div> <!-- Carousel -->
-
+             
+        <div id="servicos">
             <div class="titulos">
                     <h3>Serviços</h3>
             </div>
-             
-
         <div id="ul_div">
             <ul id="ul_info">
                 <li class="item_info">
@@ -101,30 +99,19 @@
                 </li>
               </ul>
         </div> <!--ul_div-->
+        </div> <!--servicos-->
         
         
         <div id="noticia">
             <div class="titulos">
                 <h3>Eventos e Ultimas Notícias</h3>
             </div>
-            <div id="ul_noticia_div">
-                <ul id="ul_noticia">
-                    <li class="item_noticia" id="noticia1">
-                        <a href="assessoria">
-                            <h4>Notícia 1</h4>
-                            <p>Trecho da descrição da notícia 1, só para aguçar a leitura. Trecho da descrição da notícia 1, só para aguçar a leitura.</p>
-                        </a>
-                    </li>
-                    <li class="item_noticia" id="noticia2">
-                        <a href="assessoria">
-                            <h4>Notícia 2</h4>
-                            <p>Trecho da descrição da notícia 1, só para aguçar a leitura. Trecho da descrição da notícia 1, só para aguçar a leitura.</p>
-                        </a>
-                    </li>
-                </ul> 
+            <div id="noticia_interno">
+                <?php include('get_noticias.php') ?> 
+            </div>
                 <div id="contato">
                     <div id="newsletter">
-                    Quer receber nossas informações?  
+                    Quer receber nossas informações? <br> 
                     Assine nossa Newsletter<p>
                     <form id="form_newsletter">
                     <input type="text" name="mail" id="mail" placeholder="Digite seu email" onblur="validate(mail.value)">&nbsp;&nbsp;
@@ -137,14 +124,11 @@
                         Dr. João Baptista Optiz Junior<br>
                         Perito Médico Forense - CRM 50.284
                     </div>
-            </div>
                
-        </div><!--contato-->
-            </div>
+                </div><!--contato-->
+         </div>
             
-            <div id="noticia_interno">
-                <?php include('get_noticias.php') ?> 
-            </div>
+           
         </div> <!--noticia-->
         
         
