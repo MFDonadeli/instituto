@@ -88,7 +88,7 @@
                 <li class="item_info">
                     <a href="med_trabalho">
                         <img src="images/medicina_trabalho.jpg" alt="Medicina do Trabalho"/>
-                        <h4>Medicina do Trabalho - PCMSO</h4>
+                        <h4>Medicina do Trabalho - PCMSO(NR7)</h4>
                         <p>PCMSO - Programa de Controle Médico de Saúde Ocupacional - NR7</p>   
                     </a>
                 </li>

@@ -42,10 +42,7 @@ Recursos e equipamentos</li>
                     </div> <!-- inner div -->
                 </div> <!-- conteudo -->
             </div> <!-- bottom -->
-            <div class="footer">
-                <br>  
-                Instituto Paulista de Higiene Medicina Forense e do Trabalho
-            </div> <!-- footer -->
+            <?php include('footer.php') ?>
         </div> <!-- wrapper -->
         
         <div id="cover"> </div>

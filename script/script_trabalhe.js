@@ -1,22 +1,22 @@
 function checkForm()
 {
 //fetching values from all input fields and storing them in variables
-    var nomev = document.getElementById("nome").style.borderBottomColor;
-    var sexov = document.getElementById("sexo").style.borderBottomColor;
-	var mailv = document.getElementById("email").style.borderBottomColor;
-	var telefonev = document.getElementById("telefone").style.borderBottomColor;
-	var enderecov = document.getElementById("endereco").style.borderBottomColor;
-    var cepv = document.getElementById("cep").style.borderBottomColor;
-    var bairrov = document.getElementById("bairro").style.borderBottomColor;
-    var cidadev = document.getElementById("cidade").style.borderBottomColor;
-    var estadov = document.getElementById("estado").style.borderBottomColor;
-    var data_nascimentov = document.getElementById("data_nascimento").style.borderBottomColor;
-    var estado_civilv = document.getElementById("estado_civil").style.borderBottomColor;
-    var deficienciav = document.getElementById("deficiencia").style.borderBottomColor;
-    var obj_profv = document.getElementById("obj_prof").style.borderBottomColor;
-    var trabalhov = document.getElementById("trabalho").style.borderBottomColor;
-    var salariov = document.getElementById("salario").style.borderBottomColor;
-    var extrav = document.getElementById("extra").style.borderBottomColor;
+    var nomev = document.getElementById("nome").style.borderColor;
+    var sexov = document.getElementById("sexo").style.borderColor;
+	var mailv = document.getElementById("email").style.borderColor;
+	var telefonev = document.getElementById("telefone").style.borderColor;
+	var enderecov = document.getElementById("endereco").style.borderColor;
+    var cepv = document.getElementById("cep").style.borderColor;
+    var bairrov = document.getElementById("bairro").style.borderColor;
+    var cidadev = document.getElementById("cidade").style.borderColor;
+    var estadov = document.getElementById("estado").style.borderColor;
+    var data_nascimentov = document.getElementById("data_nascimento").style.borderColor;
+    var estado_civilv = document.getElementById("estado_civil").style.borderColor;
+    var deficienciav = document.getElementById("deficiencia").style.borderColor;
+    var obj_profv = document.getElementById("obj_prof").style.borderColor;
+    var trabalhov = document.getElementById("trabalho").style.borderColor;
+    var salariov = document.getElementById("salario").style.borderColor;
+    var extrav = document.getElementById("extra").style.borderColor;
     
     var nome = document.getElementById("nome").value;
     var sexo = document.getElementById("sexo").value;
@@ -83,7 +83,7 @@ else
         }
         else if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
         {
-            document.getElementById(field).style.borderBottomColor = xmlhttp.responseText;
+            document.getElementById(field).style.borderColor = xmlhttp.responseText;
         }
         else
         {

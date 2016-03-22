@@ -27,10 +27,7 @@
                     </div>
                 </div> <!-- conteudo -->
             </div> <!-- bottom -->
-            <div class="footer">
-                <br>  
-                Instituto Paulista de Higiene Medicina Forense e do Trabalho
-            </div> <!-- footer -->
+            <?php include('footer.php') ?>
         </div> <!-- wrapper -->
         
         <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>

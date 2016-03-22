@@ -88,15 +88,11 @@
             
         </div> <!-- conteudo -->
       </div> <!-- bottom -->
-      <div class="footer">
-          <br>  
-          Instituto Paulista de Higiene Medicina Forense e do Trabalho
-      </div> <!-- footer -->
+     <?php include('footer.php') ?>
   </div> <!-- wrapper -->
  
  <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> 
   <script type='text/javascript' src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script type='text/javascript' src="script/script_index.js"></script>
 
   </body>
   </html>

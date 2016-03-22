@@ -22,10 +22,11 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
+              <ul class="nav nav-justified">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Empresa</a>
                     <ul class="dropdown-menu">
+                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="instalacoes.php">A Empresa</a></li>
                         <li><a data-toggle="collapse" data-target=".navbar-collapse" href="instalacoes.php">Nossas Instalações</a></li>
                         <li><a data-toggle="collapse" data-target=".navbar-collapse" href="localizacao.php">Localização</a></li>
                     </ul>
@@ -33,7 +34,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Serviços</a>
                     <ul class="dropdown-menu">
-                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="med_trabalho.php">Medicina do Trabalho - PCMSO</a></li>
+                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="med_trabalho.php">Medicina do Trabalho-PCMSO(NR7)</a></li>
                         <li><a data-toggle="collapse" data-target=".navbar-collapse" href="engenharia.php">Engenharia de Segurança do Trabalho</a></li>
                         <li><a data-toggle="collapse" data-target=".navbar-collapse" href="med_forense.php">Perícia Trabalhista e Previdenciária</a></li>
                         <li><a data-toggle="collapse" data-target=".navbar-collapse" href="cursos.php">Cursos de Normas Regulamentadoras (NR)</a></li>
@@ -41,13 +42,25 @@
                     </ul>
                 </li>
                 <li class="dropdown">
+                  <a href="cursos.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Informações</a>
+                  <ul class="dropdown-menu">
+                    <li><a data-toggle="collapse" data-target=".navbar-collapse" href="atendimento.php">Terceirização de Ambulatório</a></li>
+                    
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse" href="atendimento.php">Preparação para exames laboratoriais</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse" href="visita.php">Exames Laboratoriais Oferecidos</a></li>
+                       
+                  </ul>
+                </li>
+                <li class="dropdown">
                   <a href="cursos.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fale Conosco</a>
                   <ul class="dropdown-menu">
                     <li><a data-toggle="collapse" data-target=".navbar-collapse" href="atendimento.php">Atendimento</a></li>
+                    <li><a data-toggle="collapse" data-target=".navbar-collapse" href="visita.php">Agende uma visita</a></li>
                     <li><a data-toggle="collapse" data-target=".navbar-collapse" href="trabalhe.php">Trabalhe Conosco</a></li>
                   </ul>
                 </li>
-                <li><a href="visita.php">Agende uma visita</a></li>
+                <li><a href="visita.php">Publicações</a></li>
+                <li><a href="visita.php">Solicite seu Orçamento!</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->

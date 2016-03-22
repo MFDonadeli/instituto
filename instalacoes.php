@@ -6,7 +6,7 @@
         <title>Instituto Paulista - Nossas Instalações</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="description" content="" />
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">  
         <link rel="stylesheet" href="style/estilo_geral.css" />
         <link rel="stylesheet" href="style/gallery.css" />
         <link rel="stylesheet" href="style/internas.css" />
@@ -27,6 +27,14 @@
 <p>O objetivo principal do Instituto Paulista o de promover uma parceria constante com os seus clientes, permitindo a realização de um trabalho preventivo que atenda as exigências legais previstas para as condições ambientais do trabalho, bem como para o controle da saúde ocupacional do trabalhador.
 </p>
 <p>Sendo assim, conheça melhor os serviços que o Instituto Paulista pode lhe oferecer.</p>
+
+                    <div id="gallery1">
+                        <li>
+                            <a href="images/foto1Big.jpg" rel="prettyPhoto[pp_gal]">
+                                <img src="images/foto1.jpg">
+                            </a>
+                        </li>
+                    </div>
                     
                     <div id="gallery">
                         <div class="item">
@@ -111,10 +119,7 @@
                   </div>
                 </div> <!-- conteudo -->
             </div> <!-- bottom -->
-            <div class="footer">
-                <br>  
-                Instituto Paulista de Higiene Medicina Forense e do Trabalho
-            </div> <!-- footer -->
+            <?php include('footer.php') ?>
         </div> <!-- wrapper -->
         
         <div id="cover"> </div>

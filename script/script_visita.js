@@ -1,12 +1,12 @@
 function checkForm()
 {
 //fetching values from all input fields and storing them in variables
-    var nomev = document.getElementById("nome").style.borderBottomColor;
-	var mailv = document.getElementById("email").style.borderBottomColor;
-	var telefonev = document.getElementById("telefone").style.borderBottomColor;
-	var datav = document.getElementById("data").style.borderBottomColor;
-	var assuntov = document.getElementById("horario").style.borderBottomColor;
-	var textov = document.getElementById("texto_desc").style.borderBottomColor;
+    var nomev = document.getElementById("nome").style.borderColor;
+	var mailv = document.getElementById("email").style.borderColor;
+	var telefonev = document.getElementById("telefone").style.borderColor;
+	var datav = document.getElementById("data").style.borderColor;
+	var assuntov = document.getElementById("horario").style.borderColor;
+	var textov = document.getElementById("texto_desc").style.borderColor;
 	
     var nome = document.getElementById("nome").value;
     var mail = document.getElementById("email").value;
@@ -55,7 +55,7 @@ else
         }
         else if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
         {
-            document.getElementById(field).style.borderBottomColor = xmlhttp.responseText;
+            document.getElementById(field).style.borderColor = xmlhttp.responseText;
         }
         else
         {
