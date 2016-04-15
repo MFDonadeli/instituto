@@ -1,5 +1,6 @@
 <?php
     include('dbconnect.php');
+    include('sendmail.php');
     
     
     if($_POST['FORM'] == 'ATENDIMENTO')
@@ -15,6 +16,14 @@
         $insert .= " VALUES ('".implode("', '", $post)."') ";  
         
         mysqli_query($conn, $insert);
+        
+        foreach ($post as $key => $value) {
+            $str .= key . ":" . value . "\r\n";
+        }
+        
+        //echo($str);
+        
+        send_mail('atendimento', $str);
           
     }
        

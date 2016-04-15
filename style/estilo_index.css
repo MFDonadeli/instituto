@@ -155,32 +155,10 @@ h4 {
     margin: 10px;
     padding: 10px;
     width: 35%;
-    overflow: scroll;
+    float: left;
 }
 
-@media (min-width: 768px) and (max-width: 853px) {
-    #separador{
-        width: 20px;
-    }
-    #noticia {
-        width: 50%;
-    }
-}
 
-@media (min-width: 854px) and (max-width: 1059px) {
-    #separador{
-        width: 50px;
-    }
-    #noticia {
-        width: 50%;
-    }
-}
-
-@media (min-width: 1060px) and (max-width: 1199px) {
-    #separador{
-        width: 50px;
-    }
-}
 
 @media (max-width: 768px)
 {

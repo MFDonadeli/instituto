@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
         <meta charset="utf-8">
-        <title>Bootply snippet - Bootply Bootstrap Preview</title>
+        <title>Instituto Paulista - Assessoria Técnica-Jurídica de Direito Trabalhista e Previdenciário</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="description" content="" />
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
@@ -16,9 +16,10 @@
             <div class="bottom">
                 <div class="conteudo">
                     <div id="imagem">
-                        <img src="images/agenda.jpg"/>
+                        <img src="images/assessoria_interna.png"/>
                     </div>
                     <div id="texto">
+                        <h1>Assessoria Técnica-Jurídica de Direito Trabalhista e Previdenciário</h1>
                         <h3>Assessoria Jurídica Previdenciário</h3>
                         <p>Tendo em vista os reflexos das demandas trabalhistas e previdenciários sofridas nos últimos anos, as quais tem resultado na reintegração de funcionários, bem como no reconhecimento da culpabilidade das Empresas em eventos denominados de acidente do trabalho, que envolvem inclusive os eventos de doenças do trabalho e ocupacionais e a nova atuação do Instituto Nacional da Seguridade Social, a qual majorou alíquotas de impostos – FAP/SAT/RAT, bem como tem procedido ao reconhecimento imediato de eventos acidentários através do NTEP-Nexo Técnico Epidemiológico Previdenciário, o Instituto Paulista oferece a partir de agora, Programa Multidisciplinar para gerenciamento deste novo problema, associado à Assessoria Jurídica altamente especializada.</p>
                         <p>Referido Programa tem por finalidade atuar sobre as contingências de acidentes de trabalho e doenças profissionais, trabalho realizado em duas frentes: acidentes já consolidados e prevenção de acidentes. Em ambas as formas de atuação, o Instituto oferecerá soluções amplas aos seus clientes, seja através de suporte jurídico e médico, bem como atuação incisiva em processos administrativos e judiciais.</p>

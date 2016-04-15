@@ -34,10 +34,10 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Serviços</a>
                     <ul class="dropdown-menu">
-                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="med_trabalho.php">Medicina do Trabalho (PCMSO - NR7)</a></li>
-                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="engenharia.php">Engenharia de Segurança do Trabalho (PPRA – NR9)</a></li>
+                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="med_trabalho.php">Medicina do Trabalho-PCMSO(NR7)</a></li>
+                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="engenharia.php">Engenharia de Segurança do Trabalho</a></li>
                         <li><a data-toggle="collapse" data-target=".navbar-collapse" href="med_forense.php">Perícia Trabalhista e Previdenciária</a></li>
-                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="cursos.php">Cursos de Normas Regulamentadoras</a></li>
+                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="cursos.php">Cursos de Normas Regulamentadoras (NR)</a></li>
                         <li><a data-toggle="collapse" data-target=".navbar-collapse" href="assessoria.php">Assessoria Técnica-Jurídica de Direito Trabalhista e Previdenciário</a></li>       
                     </ul>
                 </li>
@@ -48,6 +48,8 @@
                     
                             <li><a data-toggle="collapse" data-target=".navbar-collapse" href="atendimento.php">Preparação para exames laboratoriais</a></li>
                             <li><a data-toggle="collapse" data-target=".navbar-collapse" href="visita.php">Exames Laboratoriais Oferecidos</a></li>
+                            <li class="divider"></li>
+                            <li><a href="publicacoes.php">Publicações</a></li>
                        
                   </ul>
                 </li>
@@ -59,8 +61,6 @@
                     <li><a data-toggle="collapse" data-target=".navbar-collapse" href="trabalhe.php">Trabalhe Conosco</a></li>
                   </ul>
                 </li>
-                <li><a href="publicacoes.php">Publicações</a></li>
-                <li><a href="orcamento.php">Solicite seu Orçamento!</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->

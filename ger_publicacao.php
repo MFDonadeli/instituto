@@ -16,18 +16,17 @@
                 die('');    
         ?>
         <?php
-            $data = "";
-            $titulo = "";
-            $conteudo = "";
+            $nome = "";
+            $descricao = "";
+            $ativo = 1;
             $id = "";
-            $url = "";
-            $data = "";
+            $imagem = "";
             
             if($_GET['id'] != '')
             {
             
                 include('dbconnect.php');
-                if(!($sql = $conn->prepare("SELECT * FROM noticias WHERE id = ?"))){
+                if(!($sql = $conn->prepare("SELECT * FROM publicacoes WHERE id = ?"))){
                     echo "Erro preparando: ( " . $conn->errno . ")" . $conn->error;
                 }
                 
@@ -47,10 +46,10 @@
                     while($row = $result->fetch_assoc())
                     {
                         $id = $row['id'];
-                        $data = $row['data'];
-                        $titulo = $row['titulo'];
-                        $conteudo = str_replace('<br />', "\n",$row['conteudo']);
-                        $url = $row['origem'];
+                        $nome = $row['nome'];
+                        $descricao = $row['descricao'];
+                        $ativo = $row['ativo'];
+                        $imagem = $row['imagem'];
                     }
                 } 
             } 
@@ -76,11 +75,14 @@
                 unset($post['apagar']);
                 unset($post['salvar']);
                 
-                $post['conteudo'] = $post_content = str_replace("\r\n","<br />",$post['conteudo']);
+                print_r($post);
+               
+                if(!isset($post['ativo']))
+                    $post['ativo'] = 0;
                 
                 if($delete)
                 {
-                    if(!($stmt = $conn->prepare("DELETE FROM noticias WHERE id = ?"))){
+                    if(!($stmt = $conn->prepare("DELETE FROM publicacoes WHERE id = ?"))){
                         echo "Erro preparando: ( " . $conn->errno . ")" . $conn->error;
                     }
                     $stmt->bind_param("s", $id);
@@ -88,7 +90,16 @@
                 }
                 else if($update)
                 {
-                    $sql = "UPDATE noticias SET ";
+                    if ($_FILES)
+                    {
+                        $name = "livros/" . $post['nome'];
+                        move_uploaded_file($_FILES['imagem']['tmp_name'], $name);
+                        
+                        $post['imagem'] = $name;
+                        echo "Uploaded image '$name'<br><img src='$name'>";
+                    }
+                    
+                    $sql = "UPDATE publicacoes SET ";
                     foreach($post as $key => $values)
                     {
                         $updt .= $key . "='" . $values . "',";
@@ -104,7 +115,16 @@
                 }
                 else
                 {
-                    $sql = "INSERT INTO noticias ";
+                    if ($_FILES)
+                    {
+                        $name = "livros/" . $post['nome'];
+                        move_uploaded_file($_FILES['imagem']['tmp_name'], $name);
+                        
+                        $post['imagem'] = $name;
+                        echo "Uploaded image '$name'<br><img src='$name'>";
+                    }
+                    
+                    $sql = "INSERT INTO publicacoes ";
                     $sql .= " (`".implode("`, `", array_keys($post))."`)";
                     $sql .= " VALUES ('".implode("', '", $post)."') ";
                     
@@ -122,25 +142,26 @@
             }  
             
          ?>
-        <form action="ger_noticia.php" method="POST" id="form_noticia">
+        <form action="ger_publicacao.php" method="POST" id="form_publicacao" enctype='multipart/form-data'>
+        
             
                 <input type="hidden" name="id" value="<?php echo $id ?>"/>
                 <input type="hidden" name="post" value="true" />
-                <label for="titulo"/>Título<br>
-                <input type="text" name="titulo" value="<?php echo $titulo ?>"/><br>
-                <label for="data"/>Data<br>
-                <input type="text" name="data" value="<?php echo $data ?>"/><br>
-                <label for="conteudo"/>Conteudo<br>
-                <textarea name="conteudo" cols="100" rows="20"><?php echo $conteudo ?></textarea><br>
-                <label for="origem"/>Link<br>
-                <input type="text" name="origem" value="<?php echo $url ?>"/><br>
-            <button type="submit" name="salvar" formaction="ger_noticia.php">Salvar</button>
-            <button type="submit" name="apagar" formaction="ger_noticia.php">Apagar</button>
+                <label for="nome"/>Título<br>
+                <input type="text" name="nome" value="<?php echo $nome ?>"/><br>
+                <label for="descricao"/>Descricao<br>
+                <textarea name="descricao" cols="100" rows="20"><?php echo $descricao ?></textarea><br>
+                <label for="ativo"/>Ativo<br>
+                <input type="checkbox" name="ativo" value="1" <?php if( $ativo ) echo "checked=true"; ?>/><br>
+                <label for="imagem"/>Image<br>
+                <input type="file" name="imagem" value="<?php echo $imagem ?>"/><br>
+            <button type="submit" name="salvar" formaction="ger_publicacao.php">Salvar</button>
+            <button type="submit" name="apagar" formaction="ger_publicacao.php">Apagar</button>
         </form>
         
         <div>
             <?php include('dbconnect.php');
-            $sql = "select * from noticias";
+            $sql = "select * from publicacoes";
             
             $result = $conn->query($sql);
             if($result->num_rows > 0)
@@ -148,8 +169,8 @@
                 echo "<ul id='list_noticias'>";
                 while($row = $result->fetch_assoc())
                 {
-                    echo "<li data-val=" . $row["id"] . "><a href='ger_noticia.php?id=" . $row["id"] . "'><strong>" . $row["data"] . "</strong>";
-                    echo " - " . $row["titulo"] . "</li></a>";
+                    echo "<li data-val=" . $row["id"] . "><a href='ger_publicacao.php?id=" . $row["id"] . "'>";
+                    echo " - " . $row["nome"] . "</li></a>";
                 }
                 echo "</ul>";
             }

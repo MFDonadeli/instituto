@@ -86,7 +86,7 @@
                 <li class="item_info">
                     <a href="med_trabalho">
                         <img src="images/medicina_trabalho.jpg" alt="Medicina do Trabalho"/>
-                        <h4>Medicina do Trabalho - PCMSO</h4>
+                        <h4>Medicina do Trabalho - PCMSO(NR7)</h4>
                         <p>PCMSO - Programa de Controle Médico de Saúde Ocupacional - NR7</p>   
                     </a>
                 </li>
@@ -107,7 +107,9 @@
                 <h3>Eventos e Ultimas Notícias</h3>
             </div>
             <div id="noticia_interno">
-                <?php include('get_noticias.php') ?> 
+                <?php 
+                $total=10;
+                include('get_noticias.php') ?> 
             </div>
                 <div id="contato">
                     <div id="newsletter">

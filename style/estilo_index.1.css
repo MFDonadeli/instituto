@@ -23,7 +23,7 @@ h4 {
 
 .item_info {
   display: inline-block;
-  width: 320px;
+  width: 250px;
   height: 200px;
   margin: 0px; 
 }
@@ -151,32 +151,9 @@ h4 {
     box-shadow: 1px 1px 10px #666666;
     margin: 10px;
     padding: 10px;
-    overflow: scroll;
+    float: left;
 }
 
-@media (min-width: 768px) and (max-width: 853px) {
-    #separador{
-        width: 20px;
-    }
-    #noticia {
-        width: 50%;
-    }
-}
-
-@media (min-width: 854px) and (max-width: 1059px) {
-    #separador{
-        width: 50px;
-    }
-    #noticia {
-        width: 50%;
-    }
-}
-
-@media (min-width: 1060px) and (max-width: 1199px) {
-    #separador{
-        width: 50px;
-    }
-}
 
 @media (max-width: 768px)
 {

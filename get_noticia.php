@@ -31,13 +31,6 @@ if($result->num_rows > 0)
 echo "<hr>";
 echo "<strong>Outras notícias</strong><br>";
 
-$result = $conn->query($sql);
-if($result->num_rows > 0)
-{
-    while($row = $result->fetch_assoc())
-    {
-        echo "<a href='noticias.php?id=" . $row['id'] . "'><strong>" . $row['data'] . "</strong> - " .
-              $row['titulo'] . "<br></a>";
-    }
-} 
+$total = 5;
+include('get_noticias.php');
 ?>

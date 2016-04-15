@@ -107,7 +107,9 @@
                 <h3>Eventos e Ultimas Notícias</h3>
             </div>
             <div id="noticia_interno">
-                <?php include('get_noticias.php') ?> 
+                <?php 
+                $total=10;
+                include('get_noticias.php') ?>  
             </div>
                 <div id="contato">
                     <div id="newsletter">

@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
         <meta charset="utf-8">
-        <title>Bootply snippet - Bootply Bootstrap Preview</title>
+        <title>Instituto Paulista - Medicina do Trabalho ( PCMSO – ASO – NR 07)</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="description" content="" />
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
@@ -16,11 +16,12 @@
             <div class="bottom">
                 <div class="conteudo">
                     <div id="imagem">
-                        <img src="images/agenda.jpg"/>
+                        <img src="images/medicina_trabalho.jpg"/>
                     </div>
                     <div id="texto">
+                        <h1>Medicina do Trabalho ( PCMSO – ASO – NR 07)</h1>
                         <h3>PCMSO - Programa de Controle Médico de Saúde Ocupacional - NR7</h3>
-                        <p>a) Viabilização técnica para a execução do PCMSC<br>
+                        <p>a) Viabilização técnica para a execução do PCMSO<br>
 Nós vistoriamos e analisamos todos os setores que compõem o ambiente de trabalho nos aspectos técnicos ocupacionais, avaliamos a existência de riscos químicos, físicos ou biológicos, bem como os resultados obtidos no Programa de Prevenção de Riscos Ambientais.</p>
 
 <p>b) Competência profissional<br>
@@ -37,7 +38,7 @@ A apresentação do Programa de Controle Médico de Saúde Ocupacional compõe-s
 <li>Prontuário médico individualizado</li>
 <li>Prontuário fonoaudiológico individualizado</li>
 <li>Prontuário de exames laboratoriais</li>
-<li>Emissão de atestado de saúde ocupacional nos moldes da NR em sua atual redação</li>
+<li>Emissão de atestado de saúde ocupacional nos moldes da NR7 em sua atual redação</li>
 <li>Relatório analítico periódico por unidade onde indicam-se os resultados apurados nos exames realizados, com a identificação de cada funcionário examinado.</li>
 </ul>
 </p>

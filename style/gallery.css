@@ -86,7 +86,7 @@
    position:relative;
    }
  
-.lightbox .close {
+.lightbox .content .close {
    display:block;
    float:right;
    text-decoration:none;

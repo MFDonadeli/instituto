@@ -42,7 +42,9 @@
             <li><a href="visita_list.php" target="content"> Visita </a></li>
             <li><a href="trabalhe_list.php" target="content"> Trabalhe Conosco </a></li>
             <li><a href="ger_noticia.php" target="content"> Gerenciar Notícias </a></li>
-            <li><a href="newsletter_list.php" target="content"> lista de e-mails </a></li>
+            <li><a href="newsletter_list.php" target="content"> Lista de e-mails </a></li>
+            <li><a href="orcamento_list.php" target="content"> Orçamento </a></li>
+            <li><a href="ger_publicacao.php" target="content"> Gerenciar Publicações </a></li>
         </ul>
     </div>
     <iframe name="content" src=""></iframe>

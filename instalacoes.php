@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <title>Instituto Paulista - Nossas Instalações</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="description" content="" />
+        <meta name="description" content="O Instituto Paulista atua no mercado há mais de vinte e cinco anos prestando serviços de assessoria e consultoria em segurança, higiene e medicina do trabalho para diversas empresas de diversos setores econômicos" />
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">  
         <link rel="stylesheet" href="style/estilo_geral.css" />
         <link rel="stylesheet" href="style/gallery.css" />
@@ -20,7 +20,7 @@
                         <img src="images/instalacoes_interna.jpg" alt="Nossas Instalações" />
                     </div>
                     <div id="texto">
-                    <p>O Instituto Paulista atua no mercado há mais de vinte anos prestando serviços de assessoria e consultoria em segurança, higiene e medicina do trabalho para diversas empresas de diversos setores econômicos; possui registro no Conselho Regional da Medicina do Estado de São Paulo e no Conselho Regional de Engenharia, Arquitetura e Agronomia do Estado de São Paulo.</p>
+                    <p>O Instituto Paulista atua no mercado há mais de vinte e cinco anos prestando serviços de assessoria e consultoria em segurança, higiene e medicina do trabalho para diversas empresas de diversos setores econômicos; possui registro no Conselho Regional da Medicina do Estado de São Paulo e no Conselho Regional de Engenharia, Arquitetura e Agronomia do Estado de São Paulo.</p>
 
 <p>A equipe de profissionais do Instituto Paulista é qualificada e está apta a lhe oferecer o melhor. Sua empresa pode usufruir de todo o aparato técnico e profissional do Instituto Paulista e desfrutar de toda a tranqüilidade que só uma empresa com os atributos e qualificações como o do Instituto Paulista pode lhe oferecer.</p>
 
@@ -70,48 +70,48 @@
                     </div> <!-- gallery -->
                     <div class="lightbox" id="img1">
                         <div class="box">
-                            <a class="close" href="#">X</a>
                             <div class="content">
+                                <a class="close" href="#">X</a>
                                 <img src="images/foto1Big.jpg"  alt="Nossas Instalações" />
                             </div>
                         </div>
                     </div>
                     <div class="lightbox" id="img2">
                         <div class="box">
-                            <a class="close" href="#">X</a>
                             <div class="content">
+                                <a class="close" href="#">X</a>
                                 <img src="images/foto2Big.jpg"  alt="Nossas Instalações" />
                             </div>
                         </div>
                     </div>
                     <div class="lightbox" id="img3">
                         <div class="box">
-                            <a class="close" href="#">X</a>
                             <div class="content">
+                                <a class="close" href="#">X</a>
                                 <img src="images/foto3Big.jpg"  alt="Nossas Instalações" />
                             </div>
                         </div>
                     </div>
                     <div class="lightbox" id="img4">
                         <div class="box">
-                            <a class="close" href="#">X</a>
                             <div class="content">
+                                <a class="close" href="#">X</a>
                                 <img src="images/foto4Big.jpg"  alt="Nossas Instalações" />
                             </div>
                         </div>
                     </div>
                     <div class="lightbox" id="img5">
                         <div class="box">
-                            <a class="close" href="#">X</a>
                             <div class="content">
+                                <a class="close" href="#">X</a>
                                 <img src="images/foto5Big.jpg" alt="Nossas Instalações" />
                             </div>
                         </div>
                     </div>
                     <div class="lightbox" id="img6">
                         <div class="box">
-                            <a class="close" href="#">X</a>
                             <div class="content">
+                                <a class="close" href="#">X</a>
                                 <embed src="http://www.institutopaulista.org/swf/videoInstituto.swf" alt="Vídeo Nossas Instalações">
                             </div>
                         </div>

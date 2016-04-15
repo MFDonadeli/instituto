@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Instituto Paulista de Higiene Medicina Forense e do Trabalho</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="O Instituto Paulista atua ha mais de 25 anos no mercado. Venha conhecer o Instituto Paulista!" />
+    <meta name="description" content="" />
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style/estilo_geral.css" />
     <link rel="stylesheet" href="style/estilo_index.css" />
@@ -20,7 +20,7 @@
     
     <div class="wrapper"> 
 
-      <?php include('top.php'); ?>
+      <?php include('top.1.php'); ?>
       
       <div class="bottom">
           <div class="conteudo">
@@ -80,15 +80,15 @@
                 </li>
                 <li class="item_info">
                     <a href="engenharia">
-                        <img src="images/engenharia.png" alt="Engenharia de Segurança do Trabalho (PPRA - NR9)"/>
-                        <h4>Engenharia de Segurança do Trabalho (PPRA – NR9)</h4>
+                        <img src="images/engenharia.png" alt="Engenharia de Segurança do Trabalho"/>
+                        <h4>Engenharia de Segurança do Trabalho</h4>
                         <p>Realizamos trabalhos preventivos com os trabalhadores em seu ambiente de trabalho.</p>
                     </a>
                 </li>
                 <li class="item_info">
                     <a href="med_trabalho">
-                        <img src="images/medicina_trabalho.jpg" alt="Medicina do Trabalho (PCMSO - NR7)"/>
-                        <h4>Medicina do Trabalho (PCMSO - NR7)</h4>
+                        <img src="images/medicina_trabalho.jpg" alt="Medicina do Trabalho"/>
+                        <h4>Medicina do Trabalho - PCMSO(NR7)</h4>
                         <p>PCMSO - Programa de Controle Médico de Saúde Ocupacional - NR7</p>   
                     </a>
                 </li>
@@ -143,9 +143,7 @@
             </div>
             
             <div id="noticia_interno">
-                <?php 
-                $total=5;
-                include('get_noticias.php') ?> 
+                <?php include('get_noticias.php') ?> 
             </div>
         </div> <!--noticia-->
         
