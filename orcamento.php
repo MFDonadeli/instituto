@@ -27,7 +27,7 @@
   <body>
   
   <div class="wrapper"> 
-      <?php include ('db_orcamento.php'); ?>
+      <?php include ('db/db_orcamento.php'); ?>
 
       <?php include('top.php'); ?>
       <div class="bottom">
@@ -65,7 +65,7 @@
                         <td>
                             <select name="id_servico" id="servico">
                                 <option value='-1'></option>
-                                <?php include('get_servicos.php'); ?>
+                                <?php include('db/get_servicos.php'); ?>
                             </select>
                         </td>
                     </tr>
@@ -74,7 +74,7 @@
                         <td>
                             <select name="id_curso" id="curso">
                                 <option value='-1'></option>
-                                <?php include('get_cursos.php'); ?>
+                                <?php include('db/get_cursos.php'); ?>
                             </select>
                         </td>
                     </tr>

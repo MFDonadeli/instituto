@@ -68,7 +68,7 @@ else
 	
 	var params = "field=" + field + "&value=" + query;
 
- 	xmlhttp.open("POST", "validation.php", true);
+ 	xmlhttp.open("POST", "form/validation.php", true);
  	
  	xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 

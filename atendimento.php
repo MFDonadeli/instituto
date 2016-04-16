@@ -18,7 +18,7 @@
   
   <div class="wrapper"> 
 
-      <?php include('db_atendimento.php'); ?>
+      <?php include('db/db_atendimento.php'); ?>
       <?php include('top.php'); ?>
       <div class="bottom">
         <div class="conteudo">

@@ -33,7 +33,7 @@
   <body>
   
   <div class="wrapper"> 
-      <?php include ('db_visita.php'); ?>
+      <?php include ('db/db_visita.php'); ?>
 
       <?php include('top.php'); ?>
       <div class="bottom">

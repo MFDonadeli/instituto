@@ -19,7 +19,7 @@
                         <img src="images/agenda.jpg"/>
                     </div>
                     <div id="texto">
-                        <?php include('get_noticia.php'); ?>
+                        <?php include('db/get_noticia.php'); ?>
                     </div> <!-- inner div -->
                 </div> <!-- conteudo -->
             </div> <!-- bottom -->

@@ -26,7 +26,7 @@ function checkForm()
         //Check All Values/Informations Filled by User are Valid Or Not.If All Fields Are invalid Then Generate alert.
         if (nomev != 'rgb(255, 0, 0)' && mailv != 'rgb(255, 0, 0)' && telefonev != 'rgb(255, 0, 0)' && servicov != 'rgb(255, 0, 0)' && cursov != 'rgb(255, 0, 0)' && textov != 'rgb(255, 0, 0)')
         {
-            document.getElementById("form_atendimento").submit();
+            document.getElementById("form/form_atendimento").submit();
         }
         else 
         {
