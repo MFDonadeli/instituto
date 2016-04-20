@@ -131,8 +131,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><label for="obj_prof">Objetivo profissional*:</label></td>
-                        <td><textarea name="obj_prof" cols="28" rows="5" max_length="200" id="obj_prof"></textarea><br>
+                        <td><label for="objetivo">Objetivo profissional*:</label></td>
+                        <td><textarea name="objetivo" cols="28" rows="5" max_length="200" id="objetivo"></textarea><br>
                         <span style="font-size: 9px;"><span id="chars_prof">200</span> caracteres restantes</span></td></td>
                     </tr>
                     <tr>

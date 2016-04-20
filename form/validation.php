@@ -124,7 +124,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		}
 	}
     
-    if($field == 'texto' || $field == 'texto_desc')
+    if($field == 'texto' || $field == 'texto_desc' || $field == 'mensagem')
 	{
 		if(empty(test_input($value)))
 		{

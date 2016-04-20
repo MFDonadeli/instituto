@@ -6,14 +6,14 @@ function checkForm()
 	var telefonev = document.getElementById("telefone").style.borderColor;
 	var datav = document.getElementById("data").style.borderColor;
 	var assuntov = document.getElementById("horario").style.borderColor;
-	var textov = document.getElementById("texto_desc").style.borderColor;
+	var textov = document.getElementById("mensagem").style.borderColor;
 	
     var nome = document.getElementById("nome").value;
     var mail = document.getElementById("email").value;
     var telefone = document.getElementById("telefone").value;
     var data = document.getElementById("data").value;
     var assunto = document.getElementById("horario").value;
-    var texto = document.getElementById("texto_desc").value;
+    var texto = document.getElementById("mensagem").value;
 	
 	if (nome == '' || mail == '' || data == '')
     {

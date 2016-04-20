@@ -13,7 +13,7 @@ function checkForm()
     var data_nascimentov = document.getElementById("data_nascimento").style.borderColor;
     var estado_civilv = document.getElementById("estado_civil").style.borderColor;
     var deficienciav = document.getElementById("deficiencia").style.borderColor;
-    var obj_profv = document.getElementById("obj_prof").style.borderColor;
+    var obj_profv = document.getElementById("objetivo").style.borderColor;
     var trabalhov = document.getElementById("trabalho").style.borderColor;
     var salariov = document.getElementById("salario").style.borderColor;
     var extrav = document.getElementById("extra").style.borderColor;
@@ -30,7 +30,7 @@ function checkForm()
     var data_nascimento = document.getElementById("data_nascimento").value;
     var estado_civil = document.getElementById("estado_civil").value;
     var deficiencia = document.getElementById("deficiencia").value;
-    var obj_prof = document.getElementById("obj_prof").value;
+    var obj_prof = document.getElementById("objetivo").value;
     var trabalho = document.getElementById("trabalho").value;
     var salario = document.getElementById("salario").value;
     var extra = document.getElementById("extra").value;

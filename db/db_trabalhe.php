@@ -1,5 +1,6 @@
 <?php
     include('dbconnect.php');
+    include('sendmail.php');
     
     
     if($_POST['FORM'] == 'TRABALHE')
@@ -18,6 +19,8 @@
         $insert .= " VALUES ('".implode("', '", $post)."') ";  
         
         mysqli_query($conn, $insert);
+        
+        send_mail('Trabalhe Conosco', $str);
     }
        
 ?>

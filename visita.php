@@ -75,8 +75,8 @@
                         <td><input name="horario" type="text" id="horario" size="30" maxlength="5"/></td>
                     </tr>
                     <tr>
-                        <td><label for="texto_desc">Mensagem:</label></td>
-                        <td><textarea name="texto_desc" cols="28" rows="5" id="texto_desc" maxlength="200"></textarea></td>
+                        <td><label for="mensagem">Mensagem:</label></td>
+                        <td><textarea name="mensagem" cols="28" rows="5" id="mensagem" maxlength="200"></textarea></td>
                     </tr>
                     <tr>
                         <td class="td_center" colspan="2" align="center"><input type="button" name="button2" id="button2" value="Enviar" onclick="checkForm()"/></td>

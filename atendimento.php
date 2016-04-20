@@ -55,8 +55,8 @@
                         <td><input name="assunto" type="text" id="assunto" size="30" maxlength="50"/></td>
                     </tr>
                     <tr>
-                        <td ><label for="texto_desc">Texto*:</label></td>
-                        <td><textarea name="texto_desc" cols="28" rows="5" id="texto_desc" onblur="validate('texto_desc', this.value)" maxlength="200"></textarea></td>
+                        <td ><label for="mensagem">Texto*:</label></td>
+                        <td><textarea name="mensagem" cols="28" rows="5" id="mensagem" onblur="validate('mensagem', this.value)" maxlength="200"></textarea></td>
                     </tr>
                     <tr>
                         <td class="td_center" colspan="2" align="center"><input type="button" name="button2" id="button2" value="Enviar" onclick="checkForm()"/></td>

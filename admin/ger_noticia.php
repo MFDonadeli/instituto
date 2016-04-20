@@ -6,9 +6,9 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
         <meta charset="utf-8">
-        <link rel="stylesheet" href="style/estilo_ger_noticia.css" />
+        <link rel="stylesheet" href="../style/estilo_ger_noticia.css" />
         <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-        <script src="script/click_noticias.js"></script>
+        <script src="../script/click_noticias.js"></script>
     </head>
     <body>
         <?php 
@@ -26,7 +26,7 @@
             if($_GET['id'] != '')
             {
             
-                include('dbconnect.php');
+                include('../db/dbconnect.php');
                 if(!($sql = $conn->prepare("SELECT * FROM noticias WHERE id = ?"))){
                     echo "Erro preparando: ( " . $conn->errno . ")" . $conn->error;
                 }
@@ -60,7 +60,7 @@
                 if(isset($_POST['apagar']))
                     $delete = true;
                     
-                include('dbconnect.php');
+                include('../db/dbconnect.php');
                 $post = $_POST;
                 
                 $update = false;
@@ -139,7 +139,7 @@
         </form>
         
         <div>
-            <?php include('dbconnect.php');
+            <?php include('../db/dbconnect.php');
             $sql = "select * from noticias";
             
             $result = $conn->query($sql);

@@ -1,14 +1,14 @@
 <?php
-$servername = "127.0.0.1";
+/*$servername = "127.0.0.1";
 $username = "root";
 $password = "";
-$database = "instituto";
+$database = "instituto";*/
 
 
-/*$servername = "mysql02.institutopaulista.org";
+$servername = "mysql02.institutopaulista.org";
 $username = "institutopauli2";
 $password = "Instituto0901";
-$database = "institutopauli2";*/
+$database = "institutopauli2";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);

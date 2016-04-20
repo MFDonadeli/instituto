@@ -1,5 +1,6 @@
 <?php
     include('dbconnect.php');
+    include('sendmail.php');
     
     
     if($_POST['FORM'] == 'VISITA')
@@ -15,6 +16,8 @@
         $insert .= " VALUES ('".implode("', '", $post)."') ";  
         
         mysqli_query($conn, $insert);
+        
+        send_mail('Agende uma visita', $str);
         
         
     }

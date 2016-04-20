@@ -15,7 +15,7 @@
 
   <body>
       
-    <?php include('dbconnect.php') ?>  
+    <?php include('db/dbconnect.php') ?>  
     
     <div class="wrapper"> 
 
@@ -109,7 +109,7 @@
             <div id="noticia_interno">
                 <?php 
                 $total=10;
-                include('get_noticias.php') ?> 
+                include('db/get_noticias.php') ?> 
             </div>
                 <div id="contato">
                     <div id="newsletter">

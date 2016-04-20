@@ -17,13 +17,9 @@
         
         mysqli_query($conn, $insert);
         
-        foreach ($post as $key => $value) {
-            $str .= key . ":" . value . "\r\n";
-        }
-        
         //echo($str);
         
-        send_mail('atendimento', $str);
+        send_mail('Atendimento', $post);
           
     }
        
