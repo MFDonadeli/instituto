@@ -33,7 +33,7 @@
       <div class="bottom">
         <div class="conteudo">
             <div id="imagem">
-                <img src="images/agenda.jpg" alt="Agente uma visita"/>
+                <img src="images/agenda.jpg" alt="Solicite um orçamento"/>
             </div>
             <div id="texto">
                 <form action="#" method="post" id="form_atendimento">

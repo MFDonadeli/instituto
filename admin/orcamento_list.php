@@ -15,7 +15,9 @@
         ?>
         <?php include('../db/dbconnect.php');
         
-        $sql = "select a.nome, a.email, b.servico, c.curso, a.mensagem from orcamento a inner join servicos b on a.id_servico = b.id left join cursos c on a.id_curso = b.id;";
+        $sql = "select orcamento.nome, orcamento.email, servicos.servico, cursos.curso, orcamento.mensagem 
+                    from (orcamento LEFT JOIN servicos on orcamento.id_servico = servicos.id) 
+                        LEFT JOIN cursos on orcamento.id_curso = cursos.id;";
         
         $result = $conn->query($sql);
         
@@ -33,8 +35,13 @@
                 echo "<table>";
                 foreach($row as $key => $value)
                 {
+                    if(strcmp($key, 'curso') == 0 && strlen($value)==0)
+                    {
+                        continue;                                                
+                    }
+                        
                     echo "<tr>";
-                    echo "<td>" . $key . "</td>";
+                    echo "<td>" . ucfirst($key) . "</td>";
                     echo "<td>" . $value . "</td>";
                     echo "</tr>";  
                 }   

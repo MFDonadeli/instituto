@@ -17,7 +17,7 @@
             <div class="bottom">
                 <div class="conteudo">
                     <div id="imagem">
-                        <img src="images/agenda.jpg"/>
+                        <img src="images/agenda.jpg" alt="Publicações"/>
                     </div>
                     <div id="texto">
                         <h3>Publicações</h3>
@@ -27,7 +27,7 @@
     <div id="ul_div">
         <ul id="ul_info">
             <ul id="ul_info">
-            <?php include('get_publicacoes.php'); ?>
+            <?php include('db/get_publicacoes.php'); ?>
         </ul>
     </div>
   </p>  

@@ -11,7 +11,7 @@ function format_content($source, $array)
         $str .= "<tr><td width='15%' align='right'><strong>" . strtoupper($key) . "</strong></td><td>" . $value . "</td></tr>";
     }
     
-    $str .= "</table>"; 
+    $str .= "</table>";
     
     return $str;   
 }
@@ -24,10 +24,14 @@ function send_mail($source, $array)
     $from = 'site@institutopaulista.org';
     $subject = $source;
     $message = $content;
-    $headers = "From:".$from;
-    $headers .= "\nContent-type: text/html\n";
+    
+    $headers = "MIME-Version: 1.1\r\n";
+    $headers .= "Content-type: text/html\r\n";
+    $headers .= "From: ".$from."\r\n";
+    $headers .= "Return-Path: ".$from."\r\n";
     
     $resp=mail($to, $subject, $message, $headers);   
+    
 }
 
 ?>

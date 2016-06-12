@@ -65,20 +65,20 @@ h4 {
 #contato
 {
     margin-left: 10px;
-    width:30%;
+    width:100%;
     float:left;
 }
 
 #ul_noticia_div {
   margin: 0 auto;
-  width:60%;
+  width:40%;
   text-align:left;
   float: left;
 }
 
 #ul_noticia {
   list-style: none;
-  margin:10px;
+  margin:20px;
   padding:0;
 }
 
@@ -98,7 +98,9 @@ h4 {
     text-align: center;
     width:350px;
     height:50px;
-    margin-top:10px;
+    float: right;
+    margin-top: 50px;
+    margin-right: 30px;
 }
 #livros
 {
@@ -108,8 +110,9 @@ h4 {
 
 #contato_interno
 {
-    float:left;
+    float:right;
     border: 1px solid;
+    
 }
 
 #newsletter{
@@ -120,6 +123,8 @@ h4 {
 	padding:10px;
 	font-size:1.2em;
 	box-shadow: 1px 1px 10px #666666;	
+    float: left;
+    margin: 10px;
 }
 
 #btnemail
@@ -154,7 +159,7 @@ h4 {
     box-shadow: 1px 1px 10px #666666;
     margin: 10px;
     padding: 10px;
-    width: 35%;
+    width: 55%;
     float: left;
 }
 
@@ -166,6 +171,7 @@ h4 {
     {
         width:100%;
         float:none;
+        margin-left: 5px;
     }
     
     #separador
@@ -182,6 +188,9 @@ h4 {
     #newsletter{
         float: left;
         left: 10px;
+        width: 350px;
+        height: 100px;
+        margin: 5px;
     }
     
     #mail
@@ -194,5 +203,15 @@ h4 {
     {
         float: left;
         left: 10px;
+        margin: 5px;
+    }
+    
+    #noticia_interno
+    {
+        box-shadow: 1px 1px 10px #666666;
+        margin: 10px;
+        padding: 10px;
+        width: 95%;
+        float: left;
     }
 }

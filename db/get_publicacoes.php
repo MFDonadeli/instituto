@@ -9,7 +9,7 @@ while($row = $result->fetch_assoc())
 {
     echo "<li class='item_info'>";
     echo "<a href='#'>";
-    echo "<img src='" . $row['imagem'] . "' alt='" . $row['nome'] . "'/>";
+    echo "<img src='data:image/png;base64," . base64_encode($row['imagem']) . "' alt='" . $row['nome'] . "'/>";
     echo "<h4>" . $row['nome'] . "</h4>";
     echo "<p>" . $row['descricao'] . "</p>";
     echo "<input type='button' value='Tenho Interesse'>";

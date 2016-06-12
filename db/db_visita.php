@@ -17,7 +17,7 @@
         
         mysqli_query($conn, $insert);
         
-        send_mail('Agende uma visita', $str);
+        send_mail('Agende uma visita', $post);
         
         
     }

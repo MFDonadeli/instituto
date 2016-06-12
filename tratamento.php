@@ -16,7 +16,7 @@
             <div class="bottom">
                 <div class="conteudo">
                     <div id="imagem">
-                        <img src="images/agenda.jpg"/>
+                        <img src="images/agenda.jpg" alt="Tratamentos Oferecidos"/>
                     </div>
                     <div id="texto">
                         <h3>Centro de Reabilitação e Fisioterapia Ocupacional</h3>

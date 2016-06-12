@@ -27,14 +27,18 @@
               <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" align="center">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    
                 </ol>
   
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="item active">
+                    <img src="images/Banner2.png" alt="Direito Trabalhista e Previdenciário" />
+                    <div class="carousel-caption">
+                    </div>
+                    </div>
+                    
+                    <div class="item">
                     <img src="images/Instituto_MedicinaForense.jpg" alt="Medicina Forense" />
                         <div class="carousel-caption">
                         
@@ -43,7 +47,18 @@
                     <div class="item">
                     <img src="images/Instituto_DireitoTrabalhista.jpg" alt="Direito Trabalhista e Previdenciário" />
                     <div class="carousel-caption">
-                        
+                    </div>
+                    </div>
+                    
+                    <div class="item">
+                    <img src="images/Banner1.png" alt="Direito Trabalhista e Previdenciário" />
+                    <div class="carousel-caption">
+                    </div>
+                    </div>
+                    
+                    <div class="item">
+                    <img src="images/Banner3.png" alt="Direito Trabalhista e Previdenciário" />
+                    <div class="carousel-caption">
                     </div>
                     </div>
                 </div> <!-- carousel-inner -->
@@ -111,36 +126,18 @@
                 <ul id="ul_noticia">
                     <li class="item_noticia" id="noticia1">
                         <a href="assessoria">
-                            <h4>Notícia 1</h4>
-                            <p>Trecho da descrição da notícia 1, só para aguçar a leitura. Trecho da descrição da notícia 1, só para aguçar a leitura.</p>
+                            <h4>Lançamento do novo Site do Instituto Paulista</h4>
+                            <p>Trecho da descrição da notícia 1, só para aguçar a leitura. Trecho da descrição da notícia 1, só para aguçar...</p>
                         </a>
                     </li>
                     <li class="item_noticia" id="noticia2">
                         <a href="assessoria">
-                            <h4>Notícia 2</h4>
-                            <p>Trecho da descrição da notícia 1, só para aguçar a leitura. Trecho da descrição da notícia 1, só para aguçar a leitura.</p>
+                            <h4>Técnico de Segurança do Trabalho. Você sabe o que faz este profissional?</h4>
+                            <p>No  dia 27 de novembro, foi o dia do Técnico de Segurança do Trabalho no Brasil. Regularizada pela Lei nº 7.410...</p>
                         </a>
                     </li>
                 </ul> 
-                <div id="contato">
-                    <div id="newsletter">
-                    Quer receber nossas informações?  
-                    Assine nossa Newsletter<p>
-                    <form id="form_newsletter">
-                    <input type="text" name="mail" id="mail" placeholder="Digite seu email" onblur="validate(mail.value)">&nbsp;&nbsp;
-                    <input type="hidden" name="valid_mail" id="valid_mail">
-                    <input type="button" value="Assine Agora!" id="btnemail" onclick="newsletter(mail.value)"></form>
-                    </div>
-                    <div id="autor_container">
-                    <div id="contato_interno">
-                        Responsável:
-                        Dr. João Baptista Optiz Junior<br>
-                        Perito Médico Forense - CRM 50.284
-                    </div>
-            </div>
-               
-        </div><!--contato-->
-            </div>
+            </div><!--ul_noticia_div-->
             
             <div id="noticia_interno">
                 <?php 
@@ -149,6 +146,24 @@
             </div>
         </div> <!--noticia-->
         
+        <div id="contato">
+            <div id="newsletter">
+                Quer receber nossas informações?  
+                Assine nossa Newsletter<p>
+                <form id="form_newsletter">
+                <input type="text" name="mail" id="mail" placeholder="Digite seu email" onblur="validate(mail.value)">&nbsp;&nbsp;
+                <input type="hidden" name="valid_mail" id="valid_mail">
+                <input type="button" value="Assine Agora!" id="btnemail" onclick="newsletter(mail.value)"></form>
+            </div> <!--newsletter-->
+            <div id="autor_container">
+                <div id="contato_interno">
+                    Responsável:
+                    Dr. João Baptista Optiz Junior<br>
+                    Perito Médico Forense - CRM 50.284
+                </div>
+            </div>
+        
+        </div><!--contato-->
         
         
          

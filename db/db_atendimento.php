@@ -17,8 +17,6 @@
         
         mysqli_query($conn, $insert);
         
-        //echo($str);
-        
         send_mail('Atendimento', $post);
           
     }

@@ -20,7 +20,7 @@
                     </div>
                     <div id="texto">
                         <h3>Notícias</h3>
-                        <?php include('get_noticias.php'); ?>
+                        <?php include('db/get_noticias.php'); ?>
                     </div> <!-- inner div -->
                 </div> <!-- conteudo -->
             </div> <!-- bottom -->

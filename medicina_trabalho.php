@@ -16,7 +16,7 @@
             <div class="bottom">
                 <div class="conteudo">
                     <div id="imagem">
-                        <img src="images/medicina_trabalho.jpg"/>
+                        <img src="images/medicina_trabalho_interna.jpg" alt="Medicina do Trabalho"/>
                     </div>
                     <div id="texto">
                         <h1>Medicina do Trabalho ( PCMSO – ASO – NR 07)</h1>

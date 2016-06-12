@@ -40,7 +40,7 @@ html, body
   content: "";
   display: table;
   clear: both;
-  margin: 1em;
+  
 }
 
 .navbar
@@ -52,7 +52,7 @@ html, body
     width: 90%; 
     max-width: 1152px;
     margin: 0 auto;
-    top: 28px;
+    top: 5px;
     font-weight: bold;
 }
 
@@ -223,6 +223,10 @@ html, body
     color:white;  
 }
 
+.fs_30{
+    font-size: 30px;
+}
+
 .fs_26{
     font-size: 26px;
 }
@@ -239,11 +243,45 @@ html, body
 
 
 @media screen and (max-width: 768px) {
-    .conteudo, .navbar{
+    .conteudo, .navbar, .top_container{
         width: 100%;
     }
     
     .contato{
         padding-right: 10px;
     }	
+    
+    /* Div logo */
+    .logo {
+        margin: 5px;
+        height:70px;	
+    }
+    
+    #instituto_nome{
+        width: 100%;
+        float: left;
+        color: white;
+        text-align: center;
+    }
+
+    #instituto_contato{
+        width: 100%;
+        float: left;  
+        text-align: center;
+        font-weight:bold;
+        color:white;  
+    }
+    
+    .footer{
+        height: 180px;
+    }
+    
+    .fs_26{
+        font-size: 20px;
+    }
+
+    .fs_22{
+        font-size: 18px;
+    }
+    
 }

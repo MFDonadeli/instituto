@@ -16,7 +16,7 @@
             <div class="bottom">
                 <div class="conteudo">
                     <div id="imagem">
-                        <img src="images/Engenharia_Trabalho.jpg"/>
+                        <img src="images/Engenharia_Trabalho.jpg" alt="Engenharia do Trabalho"/>
                     </div>
                     <div id="texto">
                         <h1>Engenharia do Trabalho (PPRA – NR9)</h1>

@@ -34,6 +34,12 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="item active">
+                    <img src="images/Banner2.png" alt="Direito Trabalhista e Previdenciário" />
+                    <div class="carousel-caption">
+                    </div>
+                    </div>
+                    
+                    <div class="item">
                     <img src="images/Instituto_MedicinaForense.jpg" alt="Medicina Forense" />
                         <div class="carousel-caption">
                         
@@ -42,7 +48,18 @@
                     <div class="item">
                     <img src="images/Instituto_DireitoTrabalhista.jpg" alt="Direito Trabalhista e Previdenciário" />
                     <div class="carousel-caption">
-                        
+                    </div>
+                    </div>
+                    
+                    <div class="item">
+                    <img src="images/Banner1.png" alt="Direito Trabalhista e Previdenciário" />
+                    <div class="carousel-caption">
+                    </div>
+                    </div>
+                    
+                    <div class="item">
+                    <img src="images/Banner3.png" alt="Direito Trabalhista e Previdenciário" />
+                    <div class="carousel-caption">
                     </div>
                     </div>
                 </div> <!-- carousel-inner -->
@@ -70,23 +87,23 @@
                     </a>
                 </li>
                 <li class="item_info">
-                    <a href="med_forense">
+                    <a href="pericia_trabalhista_previdenciaria">
                         <img src="images/perito.png" alt="Perícia Trabalhista e Previdenciária"/>
                         <h4>Perícia Trabalhista e Previdenciária</h4>
                         <p>O Instituto Paulista possui uma equipe de peritos judiciais que atuam na área jurispericial ha mais de 20 anos.</p>
                     </a>
                 </li>
                 <li class="item_info">
-                    <a href="engenharia">
-                        <img src="images/engenharia.png" alt="Engenharia de Segurança do Trabalho"/>
-                        <h4>Engenharia de Segurança do Trabalho</h4>
+                    <a href="engenharia_trabalho">
+                        <img src="images/engenharia.png" alt="Engenharia de Segurança do Trabalho (PPRA - NR9)"/>
+                        <h4>Engenharia de Segurança do Trabalho (PPRA – NR9)</h4>
                         <p>Realizamos trabalhos preventivos com os trabalhadores em seu ambiente de trabalho.</p>
                     </a>
                 </li>
                 <li class="item_info">
-                    <a href="med_trabalho">
-                        <img src="images/medicina_trabalho.jpg" alt="Medicina do Trabalho"/>
-                        <h4>Medicina do Trabalho - PCMSO(NR7)</h4>
+                    <a href="medicina_trabalho">
+                        <img src="images/medicina_trabalho.jpg" alt="Medicina do Trabalho (PCMSO - NR7)"/>
+                        <h4>Medicina do Trabalho (PCMSO - NR7)</h4>
                         <p>PCMSO - Programa de Controle Médico de Saúde Ocupacional - NR7</p>   
                     </a>
                 </li>

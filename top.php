@@ -26,7 +26,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Empresa</a>
                     <ul class="dropdown-menu">
-                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="instalacoes.php">A Empresa</a></li>
+                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="empresa.php">A Empresa</a></li>
                         <li><a data-toggle="collapse" data-target=".navbar-collapse" href="instalacoes.php">Nossas Instalações</a></li>
                         <li><a data-toggle="collapse" data-target=".navbar-collapse" href="localizacao.php">Localização</a></li>
                     </ul>
@@ -46,8 +46,8 @@
                   <ul class="dropdown-menu">
                     <li><a data-toggle="collapse" data-target=".navbar-collapse" href="atendimento.php">Terceirização de Ambulatório</a></li>
                     
-                            <li><a data-toggle="collapse" data-target=".navbar-collapse" href="atendimento.php">Preparação para exames laboratoriais</a></li>
-                            <li><a data-toggle="collapse" data-target=".navbar-collapse" href="visita.php">Exames Laboratoriais Oferecidos</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse" href="preparacao.php">Preparação para exames laboratoriais</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse" href="exames_oferecidos.php">Exames Laboratoriais Oferecidos</a></li>
                        
                   </ul>
                 </li>

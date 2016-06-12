@@ -20,7 +20,7 @@
         
         mysqli_query($conn, $insert);
         
-        send_mail('Trabalhe Conosco', $str);
+        send_mail('Trabalhe Conosco', $post);
     }
        
 ?>

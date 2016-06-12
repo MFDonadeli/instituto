@@ -10,27 +10,32 @@
     </head>
 <body>
      <?php
+     include('../db/dbconnect.php');
+     include('../db/functions.php');
+                
      $wrong_pass = true;
         if(isset($_SESSION['user']))
         { 
+            echo "set";
             $wrong_pass = false;
         }
-        
-        if (isset($_POST['user']))
+        else if (isset($_POST['senha']))
         {
-            $user = $_POST['user'];
+            echo "set1";
+            $user = 'user';
             $senha = $_POST['senha'];
+            echo $senha;
             
-            if(strcmp($senha, "teste") == 0)
+            $var = new User();
+                
+            if($var->comparePassword($conn, $senha))
             {
                 $wrong_pass = false;
                 $_SESSION['user'] = $user;
-                $_SESSION['senha'] = $senha;
             }
         }
         
-        
-        echo $wrong_pass;
+       
         if($wrong_pass)
         {
             die('Pasword Incorreto, tente novamente');    
@@ -45,6 +50,8 @@
             <li><a href="newsletter_list.php" target="content"> Lista de e-mails </a></li>
             <li><a href="orcamento_list.php" target="content"> Orçamento </a></li>
             <li><a href="ger_publicacao.php" target="content"> Gerenciar Publicações </a></li>
+            <li><a href="altera_senha.php" target="content"> Alterar Senha </a></li>
+            <li><a href="logout.php"> Logout </a></li>
         </ul>
     </div>
     <iframe name="content" src=""></iframe>

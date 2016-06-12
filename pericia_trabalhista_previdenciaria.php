@@ -16,7 +16,7 @@
             <div class="bottom">
                 <div class="conteudo">
                     <div id="imagem">
-                        <img src="images/agenda.jpg"/>
+                        <img src="images/pericia_trabalhista_previdenciaria_interna.jpg" alt="Perícia Trabalhista e Previdenciária"/>
                     </div>
                     <div id="texto">
                         <h1>Perícia Trabalhista e Previdenciária</h1>

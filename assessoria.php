@@ -16,7 +16,7 @@
             <div class="bottom">
                 <div class="conteudo">
                     <div id="imagem">
-                        <img src="images/assessoria_interna.png"/>
+                        <img src="images/assessoria_interna.png" alt="Assessoria Técnica-Jurídica de Direito Trabalhista e Previdenciário"/>
                     </div>
                     <div id="texto">
                         <h1>Assessoria Técnica-Jurídica de Direito Trabalhista e Previdenciário</h1>

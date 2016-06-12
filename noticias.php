@@ -16,7 +16,7 @@
             <div class="bottom">
                 <div class="conteudo">
                     <div id="imagem">
-                        <img src="images/agenda.jpg"/>
+                        <img src="images/agenda.jpg" alt="Notícias"/>
                     </div>
                     <div id="texto">
                         <?php include('db/get_noticia.php'); ?>

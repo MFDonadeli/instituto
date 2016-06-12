@@ -16,11 +16,13 @@
                 die('');    
         ?>
         <?php
+        
             $nome = "";
             $descricao = "";
             $ativo = 1;
             $id = "";
             $imagem = "";
+           
             
             if($_GET['id'] != '')
             {
@@ -92,11 +94,7 @@
                 {
                     if ($_FILES)
                     {
-                        $name = "livros/" . $post['nome'];
-                        move_uploaded_file($_FILES['imagem']['tmp_name'], $name);
-                        
-                        $post['imagem'] = $name;
-                        echo "Uploaded image '$name'<br><img src='$name'>";
+                        $post['imagem'] = addslashes(file_get_contents($_FILES['imagem']['tmp_name']));
                     }
                     
                     $sql = "UPDATE publicacoes SET ";
@@ -117,11 +115,7 @@
                 {
                     if ($_FILES)
                     {
-                        $name = "livros/" . $post['nome'];
-                        move_uploaded_file($_FILES['imagem']['tmp_name'], $name);
-                        
-                        $post['imagem'] = $name;
-                        echo "Uploaded image '$name'<br><img src='$name'>";
+                        $post['imagem'] = addslashes(file_get_contents($_FILES['imagem']['tmp_name']));
                     }
                     
                     $sql = "INSERT INTO publicacoes ";

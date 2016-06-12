@@ -34,7 +34,7 @@
                 foreach($row as $key => $value)
                 {
                     echo "<tr>";
-                    echo "<td>" . $key . "</td>";
+                    echo "<td>" . ucfirst($key) . "</td>";
                     echo "<td>" . $value . "</td>";
                     echo "</tr>";  
                 }   

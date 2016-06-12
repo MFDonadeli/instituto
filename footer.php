@@ -9,9 +9,9 @@
             </div>
             <div id="instituto_contato">
                 <p>
-                <span class="fs_26">&#128222; (11) 2977-8899</span>
+                <span class="fs_26">&#9990; (11) 2977-8899</span>
                 <br>
-                <span class="fs_22">&#128231; comercial@institutopaulista.org</span>
+                <span class="fs_22">&#9993; comercial@institutopaulista.org</span>
                 </p>
             </div>
           </div>
